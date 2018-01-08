@@ -37,7 +37,6 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sharp',
     'gatsby-plugin-offline',
-    'gatsby-plugin-emotion',
     'gatsby-plugin-react-next',
     'gatsby-transformer-remark',
     'gatsby-transformer-json',
