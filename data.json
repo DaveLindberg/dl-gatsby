@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "brands",
+    "message":
+      "They frame the conversation. Add context and meaning. A coherent brand delivers tangible value. ",
+    "link": "/espressoluv",
+    "cta": "Case Study: EspressoLuv",
+    "background": "https://davelindberg.github.io/assets/images/espressoluv.png"
+  },
+  {
+    "id": 2,
+    "title": "generate",
+    "message":
+      "A successful marketing plan produces the right kind of traffic and a meaningful message. The result? A profitable return on investment.",
+    "link": "#",
+    "cta": "Link to come",
+    "background": "https://davelindberg.github.io/assets/images/meshpipe.jpg"
+  },
+  {
+    "id": 3,
+    "title": "leads",
+    "message":
+      "Connecting with people when they’re at a specific point in the purchase process. Awareness leads to interest; interest leads to action. Actions lead to leads.",
+    "link": "/tim-clue",
+    "cta": "Case Study: Tim Clue",
+    "background": "https://davelindberg.github.io/assets/images/timclue.jpg"
+  },
+  {
+    "id": 4,
+    "title": "campaigns",
+    "message":
+      "Regardless of the media or the budget: we make it memorable. And ensure it’s actionable.",
+    "link": "/glens-falls-hospital",
+    "cta": "Case Study: Glens Falls Hospital",
+    "background": "https://davelindberg.github.io/assets/images/mychart-rev.jpg"
+  },
+  {
+    "id": 5,
+    "title": "build",
+    "message":
+      "Deep experience in Wordpress and WooCommerce. Certified BigCommerce partner. We build sites that sell.",
+    "link": "/ecommerce",
+    "cta": "Ecommerce: Planning for Success",
+    "background": "https://davelindberg.github.io/assets/images/matrix.jpg"
+  },
+  {
+    "id": 6,
+    "title": "users",
+    "message":
+      "At the core of all our work, you’ll find user-centered design. From marketing to UI to print, results happen when people can meet their needs.",
+    "link": "/upper-valley-aquatic-center",
+    "cta": "Case Study: Upper Valley Aquatic Center",
+    "background": "https://davelindberg.github.io/assets/images/streamline.png"
+  },
+  {
+    "id": 7,
+    "title": "experiences",
+    "message":
+      "Every user’s experience contributes directly to your bottom line.  Our extensive experience contributes directly to theirs.",
+    "link": "/contact",
+    "cta": "Work with us",
+    "background": "https://davelindberg.github.io/assets/images/sky.jpg"
+  },
+  {
+    "id": 8,
+    "title": "engage",
+    "message":
+      "“How does this fit within my life?” As customers explore and identify, we allow the story to unfold, and guide them through the purchase process.",
+    "link": "/ayurvedik",
+    "cta": "Case Study: Ayurvedik by shaninrenee",
+    "background":
+      "https://davelindberg.github.io/assets/images/iStock-514618014.jpg"
+  },
+  {
+    "id": 9,
+    "title": "customers",
+    "message": "Changing your expectations can change everything.",
+    "link": "/overland",
+    "cta": "Case Study: Overland Sheepskin",
+    "background": "https://davelindberg.github.io/assets/images/ovr_tile.jpg"
+  },
+  {
+    "id": 10,
+    "title": "interactions",
+    "message":
+      "The journey from ‘potential prospect’ to ‘engaged customer’ involves a unique range of behaviors.",
+    "link": "/analytics",
+    "cta": "Read about the Customer Journey",
+    "background":
+      "https://davelindberg.github.io/assets/images/iStock-176759492.jpg"
+  },
+  {
+    "id": 11,
+    "title": "attract",
+    "message":
+      "SEO is everywhere. Decisions on content, campaigns, coding, and communications all impact how well your web site delivers its message. ",
+    "link": "/search-engine-optimization",
+    "cta": "Modern SEO",
+    "background": "https://davelindberg.github.io/assets/images/jimbo.jpg"
+  },
+  {
+    "id": 12,
+    "title": "people",
+    "message":
+      "Teamwork makes the dream work. With years of broad experience in the field, we can bring together the right mix of seasoned professionals to deliver top-quality projects of every size.",
+    "link": "/linkedin",
+    "cta": "The Network",
+    "background":
+      "https://davelindberg.github.io/assets/images/people-crowd.jpg"
+  }
+]
