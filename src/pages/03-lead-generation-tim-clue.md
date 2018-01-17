@@ -5,7 +5,7 @@
   message: "Connecting with people when they’re at a specific point in the purchase process. Awareness leads to interest; interest leads to action. Actions lead to leads."
   cta: "Case Study: Tim Clue"
   pullquote: "We’ve helped grow Tim’s business using Google Adwords search campaigns since 2014."
-  testimonial: "\“ROI in spades—tangible, actionable, trackable results. Who ever thought?\”<br /> — Kathryn Lake Clue, <br />Marketing Manager"
+  testimonial: "ROI in spades—tangible, actionable, trackable results. Who ever thought?<br /> — Kathryn Lake Clue, <br />Marketing Manager"
 ---
 
 # Tim Clue, Motivational Speaker, Takes the Lead

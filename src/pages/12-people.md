@@ -1,5 +1,5 @@
 ---
-  id: 12,
+  index: 12
   tile: "people"
   date: "2018-01-16"
   image: "/assets/images/people-crowd.jpg"

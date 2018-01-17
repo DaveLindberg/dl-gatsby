@@ -1,5 +1,5 @@
 ---
-  id: 10,
+  index: 10
   tile: "interactions"
   date: "2018-01-15"
   image: "/assets/images/iStock-176759492.jpg"
@@ -28,7 +28,7 @@ At their core, all customer journeys share similar characteristics. Traditionall
 		<span>Post Purchase Behavior </span>
 	</div>
 </div>
-Originally conceived of as a linear process, the journey is now more often visualized as a recursive loop. After their first purchase, customers retrace these steps but in a different, more brand-aware context.  
+Originally conceived of as a linear process, the journey is now more often visualized as a recursive loop. After their first purchase, customers retrace these steps but in a different, more brand-aware context.
 <div class=“loopier”>
 	<span>Awareness</span>
 	<span>Familiarity</span>
