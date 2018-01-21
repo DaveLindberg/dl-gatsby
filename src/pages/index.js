@@ -1,18 +1,24 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from 'react';
+import Link from 'gatsby-link';
 
 export default ({ data }) => {
   console.log(data);
   return (
     <div>
-      <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+      <h1>{data.allMarkdownRemark.totalCount} Pages</h1>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
-          <h3>
-            {node.frontmatter.index}{" "}
+          <h4>
+            {node.frontmatter.index}{' '}
             <span color="#BBB">— {node.frontmatter.tile}</span>
-          </h3>
+          </h4>
           <p>{node.frontmatter.message}</p>
+          <Link
+            to={node.fields.slug}
+            css={{ textDecoration: 'none', color: 'inherit' }}
+          >
+            {node.frontmatter.cta}
+          </Link>
         </div>
       ))}
     </div>
@@ -24,8 +30,10 @@ export const query = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___index], order: ASC }) {
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
-            index
             title
             tile
             message
