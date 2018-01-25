@@ -1,5 +1,6 @@
 ---
   index: 03
+  tilenum: 03
   tile: "leads"
   image: "/assets/images/timclue.jpg"
   message: "Connecting with people when they’re at a specific point in the purchase process. Awareness leads to interest; interest leads to action. Actions lead to leads."

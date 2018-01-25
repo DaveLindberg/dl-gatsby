@@ -1,5 +1,6 @@
 ---
   index: 07
+  tilenum: 07
   tile: "experiences"
   date: "2018-01-15"
   image: "/assets/images/sky.jpg"

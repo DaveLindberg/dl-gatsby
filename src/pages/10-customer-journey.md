@@ -1,5 +1,6 @@
 ---
   index: 10
+  tilenum: 10
   tile: "interactions"
   date: "2018-01-15"
   image: "/assets/images/iStock-176759492.jpg"

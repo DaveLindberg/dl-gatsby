@@ -1,5 +1,6 @@
 ---
   index: 06
+  tilenum: 06
   tile: "users"
   date: "2018-01-15"
   image: "/assets/images/streamline.png"

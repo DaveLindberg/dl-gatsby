@@ -1,5 +1,6 @@
 ---
   index: 01
+  tilenum: 01
   tile: "brands"
   date: "2018-01-15"
   image: "/assets/images/espressoluv.png"

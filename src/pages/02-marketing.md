@@ -1,5 +1,6 @@
 ---
   index: 02
+  tilenum: 02
   tile: "generate"
   date: "2018-01-15"
   image: "/assets/images/meshpipe.jpg"
