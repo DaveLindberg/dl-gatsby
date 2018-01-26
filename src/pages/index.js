@@ -1,7 +1,25 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
+import espressoluv from '../assets/images/espressoluv.png'; //01
+import meshpipe from '../assets/images/meshpipe.jpg'; //02
+import timclue from '../assets/images/timclue.png'; //03
 
+console.log(espressoluv);
+console.log(meshpipe);
+
+const StyledMain = styled.div`
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(100px, auto) repeat(4, 20vh);
+  grid-auto-rows: 0px;
+  grid-gap: 0px;
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(60px, auto) repeat(6, 14vh);
+  }
+`;
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -24,6 +42,7 @@ class Main extends React.Component {
         key={edge.node.frontmatter.tilenum}
         title={edge.node.frontmatter.tile}
         message={edge.node.frontmatter.message}
+        background={edge.node.frontmatter.image}
         isActive={this.state.activeItem === edge.node.frontmatter.tilenum}
         className={
           this.state.activeItem === edge.node.frontmatter.tilenum
@@ -34,11 +53,35 @@ class Main extends React.Component {
       />
     ));
     console.log(Squares);
-    return <div>{Squares}</div>;
+    return (
+      <StyledMain className="main" id="marketing">
+        {Squares}
+      </StyledMain>
+    );
   }
 }
 
 export default Main;
+
+const StyledSquare = styled.div`
+  background-image: url(${props => props.background});
+  padding: 0em;
+`;
+
+function BrandsImage(props) {
+  return <img src={espressoluv} />;
+}
+function MarketingImage(props) {
+  return <img src={meshpipe} />;
+}
+
+function SquareImage(props) {
+  const title = props.title;
+  if (title == 'brands') {
+    return <BrandsImage />;
+  }
+  return <MarketingImage />;
+}
 
 class Square extends React.Component {
   constructor(props) {
@@ -49,16 +92,19 @@ class Square extends React.Component {
   handleIsActiveChange(e) {
     this.props.onIsActiveChange(this.props.id, !this.props.isActive);
   }
+
   render() {
     return (
-      <div
+      <StyledSquare
         onClick={this.handleIsActiveChange}
         className={this.props.className}
         key={this.props.tilenum}
+        title={this.props.tile}
       >
-        <h2> {this.props.title} </h2>
-        <div className="message"> {this.props.message} </div>
-      </div>
+        <h2>{this.props.title}</h2>
+        <div className="message">{this.props.message}</div>
+        <SquareImage title={this.props.title} />
+      </StyledSquare>
     );
   }
 }

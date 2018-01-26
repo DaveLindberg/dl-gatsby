@@ -3,7 +3,7 @@
   tilenum: 02
   tile: "generate"
   date: "2018-01-15"
-  image: "/assets/images/meshpipe.jpg"
+  image: "meshpipe"
   message: "A successful marketing plan produces the right kind of traffic and a meaningful message. The result? A profitable return on investment."
   cta: "Link to come"
   pullqoute: "Planning for change has changed how we plan."

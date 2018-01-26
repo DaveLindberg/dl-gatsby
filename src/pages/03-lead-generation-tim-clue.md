@@ -2,7 +2,7 @@
   index: 03
   tilenum: 03
   tile: "leads"
-  image: "/assets/images/timclue.jpg"
+  image: "/assets/images/timclue.png"
   message: "Connecting with people when they’re at a specific point in the purchase process. Awareness leads to interest; interest leads to action. Actions lead to leads."
   cta: "Case Study: Tim Clue"
   pullquote: "We’ve helped grow Tim’s business using Google Adwords search campaigns since 2014."
