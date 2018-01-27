@@ -3,7 +3,7 @@
   tilenum: 09
   tile: "customers"
   date: "2018-01-15"
-  image: "/assets/images/ovr_tile.jpg"
+  image: "/assets/images/overland.jpg"
   message: "Changing your expectations can change everything."
   cta: "Case Study: Overland Sheepskin"
   pullquote: "\"We developed a new approach to market high-end luxury outerwear online.\""

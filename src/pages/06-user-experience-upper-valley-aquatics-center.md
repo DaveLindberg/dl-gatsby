@@ -3,7 +3,7 @@
   tilenum: 06
   tile: "users"
   date: "2018-01-15"
-  image: "/assets/images/streamline.png"
+  image: "/assets/images/swimmer.jpg"
   message: "At the core of all our work, you’ll find user-centered design. From marketing to UI to print, results happen when people can meet their needs."
   cta: "Case Study: Upper Valley Aquatic Center"
   testimonial: "*Dave is a clear and calm marketing expert, highly skilled in asking the important questions and offering solutions that have revolutionized our ability for us to sell more of what we offer.*<br />— Lisa Vallejo Sorensen<br/>Communications Director at Upper Valley Aquatic Center"

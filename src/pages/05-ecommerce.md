@@ -3,7 +3,7 @@
   tilenum: 05
   tile: "build"
   date: "2018-01-15"
-  image: "/assets/images/matrix.jpg"
+  image: "/assets/images/seedlings.jpg"
   message: "Deep experience in Wordpress and WooCommerce. Certified BigCommerce partner. We build sites that sell."
   cta: "Ecommerce: Planning for Success"
   pullquote: "A well-balanced site provides a stable platform for business growth."

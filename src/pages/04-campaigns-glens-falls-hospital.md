@@ -3,7 +3,7 @@
   tilenum: 04
   tile: "campaigns"
   date: "2018-01-15"
-  image: "/assets/images/mychart-rev.jpg"
+  image: "/assets/images/mychart.jpg"
   message: "Regardless of the media or the budget: we make it memorable. And ensure it’s actionable."
   cta: "Case Study: Glens Falls Hospital"
   pullquote: "GFH went from losing $1.6 million from 2009-12 to becoming a profitable institution in 2013."

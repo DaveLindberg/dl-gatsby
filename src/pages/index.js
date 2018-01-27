@@ -4,6 +4,15 @@ import styled from 'styled-components';
 import espressoluv from '../assets/images/espressoluv.png'; //01
 import meshpipe from '../assets/images/meshpipe.jpg'; //02
 import timclue from '../assets/images/timclue.png'; //03
+import mychart from '../assets/images/mychart.jpg'; //04
+import seedlings from '../assets/images/seedlings.jpg'; //05
+import swimmer from '../assets/images/swimmer.jpg'; //06
+import sky from '../assets/images/sky.jpg'; //07
+import firepit from '../assets/images/firepit.jpg'; //08
+import overland from '../assets/images/overland.jpg'; //09
+import stoplight from '../assets/images/stoplight.jpg'; //10
+import jimbo from '../assets/images/jimbo.jpg'; //11
+import rally from '../assets/images/rally.png'; //12
 
 console.log(espressoluv);
 console.log(meshpipe);
@@ -63,14 +72,26 @@ class Main extends React.Component {
 
 export default Main;
 
-const bgImageChooser = title => {
-  if (title == 'brands') return espressoluv;
-  else return meshpipe;
-};
+const bgImageChooser = title =>
+  ({
+    brands: espressoluv,
+    generate: meshpipe,
+    leads: timclue,
+    campaigns: mychart,
+    build: seedlings,
+    users: swimmer,
+    experiences: sky,
+    engage: firepit,
+    customers: overland,
+    interactions: stoplight,
+    attract: jimbo,
+    people: rally
+  }[title]);
 
 const StyledSquare = styled.div`
   background: url(${props => bgImageChooser(props.title)});
-  padding: 0em;
+  background-size: cover;
+  padding: 1em;
 `;
 
 class Square extends React.Component {
@@ -94,7 +115,7 @@ class Square extends React.Component {
         onClick={this.handleIsActiveChange}
         className={this.props.className + ' ' + this.props.title}
         key={this.props.tilenum}
-        title={this.props.tile}
+        title={this.props.title}
       >
         <h2>{this.props.title}</h2>
         <div className="message">{this.props.message}</div>
