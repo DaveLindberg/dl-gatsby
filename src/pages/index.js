@@ -63,8 +63,13 @@ class Main extends React.Component {
 
 export default Main;
 
+const bgImageChooser = title => {
+  if (title == 'brands') return espressoluv;
+  else return meshpipe;
+};
+
 const StyledSquare = styled.div`
-  background: url(${espressoluv});
+  background: url(${props => bgImageChooser(props.title)});
   padding: 0em;
 `;
 
@@ -87,10 +92,9 @@ class Square extends React.Component {
     return (
       <StyledSquare
         onClick={this.handleIsActiveChange}
-        className={this.props.className}
+        className={this.props.className + ' ' + this.props.title}
         key={this.props.tilenum}
         title={this.props.tile}
-        background={this.props.backgroundurl}
       >
         <h2>{this.props.title}</h2>
         <div className="message">{this.props.message}</div>
