@@ -64,24 +64,9 @@ class Main extends React.Component {
 export default Main;
 
 const StyledSquare = styled.div`
-  background-image: url(${props => props.background});
+  background: url(${espressoluv});
   padding: 0em;
 `;
-
-function BrandsImage(props) {
-  return <img src={espressoluv} />;
-}
-function MarketingImage(props) {
-  return <img src={meshpipe} />;
-}
-
-function SquareImage(props) {
-  const title = props.title;
-  if (title == 'brands') {
-    return <BrandsImage />;
-  }
-  return <MarketingImage />;
-}
 
 class Square extends React.Component {
   constructor(props) {
@@ -93,6 +78,11 @@ class Square extends React.Component {
     this.props.onIsActiveChange(this.props.id, !this.props.isActive);
   }
 
+  function() {
+    const backgroundurl = this.props.title;
+    backgroundurl: 'brands' ? { espressoluv } : { meshpipe };
+  }
+
   render() {
     return (
       <StyledSquare
@@ -100,10 +90,10 @@ class Square extends React.Component {
         className={this.props.className}
         key={this.props.tilenum}
         title={this.props.tile}
+        background={this.props.backgroundurl}
       >
         <h2>{this.props.title}</h2>
         <div className="message">{this.props.message}</div>
-        <SquareImage title={this.props.title} />
       </StyledSquare>
     );
   }
