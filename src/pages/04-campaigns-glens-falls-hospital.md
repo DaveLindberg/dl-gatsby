@@ -1,6 +1,6 @@
 ---
   index: 04
-  tilenum: 04
+  tilenum: "04"
   tile: "campaigns"
   date: "2018-01-15"
   image: "/assets/images/mychart.jpg"

@@ -1,6 +1,6 @@
 ---
   index: 05
-  tilenum: 05
+  tilenum: "05"
   tile: "build"
   date: "2018-01-15"
   image: "/assets/images/seedlings.jpg"

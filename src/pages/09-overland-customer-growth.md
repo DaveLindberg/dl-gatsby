@@ -1,6 +1,6 @@
 ---
   index: 09
-  tilenum: 09
+  tilenum: "09"
   tile: "customers"
   date: "2018-01-15"
   image: "/assets/images/overland.jpg"

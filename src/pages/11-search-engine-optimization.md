@@ -1,6 +1,6 @@
 ---
   index: 11
-  tilenum: 11
+  tilenum: "11"
   tile: "attract"
   date: "2018-01-16"
   image: "/assets/images/jimbo.jpg"

@@ -1,6 +1,6 @@
 ---
   index: 08
-  tilenum: 08
+  tilenum: "08"
   tile: "engage"
   date: "2018-01-15"
   image: "/assets/images/firepit.jpg"
