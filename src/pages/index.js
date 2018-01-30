@@ -183,12 +183,12 @@ class Main extends React.Component {
     };
     this.handleIsActiveChange = this.handleIsActiveChange.bind(this);
   }
-  handleIsActiveChange(itemId, isActive) {
+  handleIsActiveChange(tilenum, isActive) {
     this.setState({
-      activeItem: isActive ? itemId : null,
+      activeItem: isActive ? tilenum : null,
       activeClassName: isActive ? 'active' : 'inactive'
     });
-    console.log(itemId, isActive);
+    console.log(this.state.activeItem);
   }
   render() {
     const { data: { allMarkdownRemark: { edges } } } = this.props;
@@ -197,21 +197,22 @@ class Main extends React.Component {
       <Square
         key={edge.node.id}
         id={edge.node.id}
+        tilenum={edge.node.frontmatter.tilenum}
         title={edge.node.frontmatter.tile}
         message={edge.node.frontmatter.message}
         background={edge.node.frontmatter.image}
         cta={edge.node.frontmatter.cta}
         link={edge.node.frontmatter.link}
-        isActive={this.state.activeItem === edge.node.frontmatter.tilenum}
+        isActive={this.state.activeItem === edge.node.id}
         className={
-          this.state.activeItem === edge.node.frontmatter.tilenum
+          this.state.activeItem === edge.node.id
             ? this.state.activeClassName
             : 'inactive'
         }
         onIsActiveChange={this.handleIsActiveChange}
       />
     ));
-    console.log(Squares);
+    console.log(Squares, this.state);
     return (
       <StyledMain className="main" id="marketing">
         <Headline>
