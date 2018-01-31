@@ -4,7 +4,8 @@
   tile: "attract"
   date: "2018-01-16"
   image: "/assets/images/jimbo.jpg"
-  message: "SEO is everywhere. Decisions on content, campaigns, coding, and communications all impact how well your web site delivers its message."
+  message: "SEO is everywhere. Decisions on content, campaigns, coding, and communications"
+  message2: "all impact how well your web site delivers its message."
   cta: "Modern SEO"
   pullquote: “Starting the process now can indeed produce verifiable results quickly.”
 ---

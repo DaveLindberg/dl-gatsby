@@ -4,7 +4,8 @@
   tile: "interactions"
   date: "2018-01-15"
   image: "/assets/images/stoplight.jpg"
-  message: "The journey from ‘potential prospect’ to ‘engaged customer’ involves a unique range of behaviors."
+  message: "The journey from ‘potential prospect’ to ‘engaged customer’"
+  message2: "involves a unique range of behaviors."
   cta: "Read about the Customer Journey"
   pullquote: "At each stage, the consumer displays behavior that’s specific to their current short-term goals."
 ---

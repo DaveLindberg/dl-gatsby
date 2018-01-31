@@ -1,15 +1,17 @@
 ---
   index: 02
   tilenum: "02"
+  title: "If You Want to Create Happy Customers, We Plan on Helping."
   tile: "generate"
   date: "2018-01-15"
   image: "meshpipe"
-  message: "A successful marketing plan produces the right kind of traffic and a meaningful message. The result? A profitable return on investment."
+  message: "A successful marketing plan produces the right kind of traffic and a meaningful message."
+  messagex: "The result? A profitable return on investment."
   cta: "Link to come"
   pullqoute: "Planning for change has changed how we plan."
 ---
 
-# Looking to Create Happy Customers? <br />We Plan to Help.
+# "If You Want to Create Happy Customers, We Plan on Helping.
 
 A marketing plan should help answer the important questions.
 

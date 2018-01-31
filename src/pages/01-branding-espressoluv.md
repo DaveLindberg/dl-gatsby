@@ -1,17 +1,19 @@
 ---
   index: 01
   tilenum: "01"
+  title: "EspressoLuv Headline to Come"
   tile: "brands"
   date: "2018-01-15"
   image: "/assets/images/espressoluv.png"
-  message: "It frames the conversation. Adds context and meaning. A coherent brand delivers tangible value."
+  message: "It frames the conversation. Adds context and meaning."
+  messagex: " A coherent brand delivers tangible value."
   cta: "Case Study: EspressoLuv"
   pullquote: "The brand is more than just a graphic look, it needs to reflect the  personality and essence of the company and its products."
 ---
 
-# EspressoLuv Headline to Come
+# "If You Want to Create Happy Customers, We Plan on Helping.
 
-I’d consulted with Bill Burnett a couple years earlier, when he was researching market potential for a new venture in emergency supplies. When he ultimately decided against that investment, that it just didn’t feel like the right match for him, I was impressed. Here was a guy who did his homework, had a string of successful ventures to show for it, and was willing to wait for the right opportunity.
+<p>I’d consulted with Bill Burnett a couple years earlier, when he was researching market potential for a new venture in emergency supplies. When he ultimately decided against that investment, that it just didn’t feel like the right match for him, I was impressed. Here was a guy who did his homework, had a string of successful ventures to show for it, and was willing to wait for the right opportunity.</p>
 
 So when he called to tell me about his new idea, I could tell from the spark in his voice that he’d finally found his new calling. He went on to describe how he fell in love with espresso during his travels, the current strengths and weaknesses of the specialty coffee market, and the as-yet-unmet opportunity in the hand-roasted specialty niche.
 

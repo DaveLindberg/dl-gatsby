@@ -4,7 +4,8 @@
   tile: "customers"
   date: "2018-01-15"
   image: "/assets/images/overland.jpg"
-  message: "Changing your expectations can change everything."
+  message: "Changing your expectations"
+  message2: "can change everything."
   cta: "Case Study: Overland Sheepskin"
   pullquote: "\"We developed a new approach to market high-end luxury outerwear online.\""
 ---

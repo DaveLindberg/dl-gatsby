@@ -86,7 +86,6 @@ const StyledMain = styled.div`
   }
   .inactive h2,
   .active h2 {
-    padding: 0% 7%;
     margin: 0px;
     cursor: pointer;
     color: #ffffff;
@@ -118,7 +117,7 @@ const StyledMain = styled.div`
       padding: 0em;
       display: grid;
       grid-template-columns: 1fr 1em;
-      grid-template-rows: 1em 3fr 1fr 2fr;
+      grid-template-rows: 1em 3fr 1fr 1fr 3fr;
       background-color: rgba(0, 0, 0, 0.4);
       transition: background 0.5s;
     }
@@ -132,13 +131,14 @@ const StyledMain = styled.div`
     }
 
     h2 {
-      font-size: 5em;
-      color: #999900;
+      font-size: 3em;
+      color: #cc9900;
       text-align: center;
-      padding: 0 4em;
+      padding: 0 0em;
       grid-column: 1 / -1;
       grid-row: 2 / 3;
-      align-self: center;
+      align-self: end;
+      margin-bottom: 0.2em;
       @media (max-width: 767px) {
         font-size: 2em;
         padding: 0 0em;
@@ -146,18 +146,10 @@ const StyledMain = styled.div`
       }
     }
     p {
-      grid-column: 1 / -1;
-      grid-row: 3 / 4;
-      padding: 0 25%;
-      font-weight: 300;
-      text-shadow: 0px 0px 4px #000;
-      @media (max-width: 767px) {
-        font-size: 1em;
-      }
     }
     a {
       grid-column: 1 / -1;
-      grid-row: 4 / -1;
+      grid-row: 5 / -1;
       align-item: center;
       align-self: start;
       justify-self: center;
@@ -192,7 +184,6 @@ class Main extends React.Component {
   }
   render() {
     const { data: { allMarkdownRemark: { edges } } } = this.props;
-    console.log(this.props.data.allMarkdownRemark.edges);
     const Squares = this.props.data.allMarkdownRemark.edges.map(edge => (
       <Square
         key={edge.node.id}
@@ -200,9 +191,10 @@ class Main extends React.Component {
         tilenum={edge.node.frontmatter.tilenum}
         title={edge.node.frontmatter.tile}
         message={edge.node.frontmatter.message}
+        messagex={edge.node.frontmatter.messagex}
         background={edge.node.frontmatter.image}
         cta={edge.node.frontmatter.cta}
-        link={edge.node.frontmatter.link}
+        link={edge.node.fields.slug}
         isActive={this.state.activeItem === edge.node.id}
         className={
           this.state.activeItem === edge.node.id
@@ -272,18 +264,43 @@ const SquareH2 = styled.h2`
 const Message = styled.p`
   color: #ffffff;
   text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  align-self: center;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.8em;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  padding: 0 25%;
+  text-shadow: 0px 0px 4px #000;
+  @media (max-width: 767px) {
+    font-size: 1em;
+  }
+`;
+const Messagex = styled.p`
+  color: #ffffff;
+  text-align: center;
+  align-self: center;
   font-size: 1.2em;
-  font-weight: 100;
-  line-height: 1.6em;
+  font-weight: 300;
+  line-height: 1.8em;
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+  padding: 0 25%;
+  text-shadow: 0px 0px 4px #000;
+  @media (max-width: 767px) {
+    font-size: 1em;
+  }
 `;
 const LinkButton = styled.a`
   display: block;
   color: #cc9900 !important;
-  font-size: 1.4em;
-  font-weight: 400;
+  font-size: 1.2em;
+  font-weight: 100;
   background: rgba(0, 0, 0, 0.6);
   padding: 0.5em 2em;
-  border: 3px solid #cc9900;
+  border: 2px solid #cc9900;
   border-radius: 6px;
 `;
 
@@ -311,6 +328,7 @@ class Square extends React.Component {
           <Closer className="closer">X</Closer>
           <SquareH2>{this.props.title}</SquareH2>
           <Message className="message">{this.props.message}</Message>
+          <Messagex className="messagex">{this.props.messagex}</Messagex>
           <LinkButton className="LinkButton" href={this.props.link}>
             {this.props.cta}
           </LinkButton>
@@ -333,6 +351,7 @@ export const query = graphql`
             tile
             tilenum
             message
+            messagex
             image
             cta
             pullquote
