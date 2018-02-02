@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
+import Portfolio from '../components/react-portfolio-behance/src/components/Portfolio/Portfolio.js';
+import Projects from '../components/react-portfolio-behance/src/components/Portfolio/Projects.js';
 
 import espressoluv from '../assets/images/espressoluv.jpg'; //01
 import meshpipe from '../assets/images/meshpipe.jpg'; //02
@@ -42,7 +44,10 @@ const StyledMain = styled.div`
   grid-area: main;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(80px, auto) repeat(4, minmax(200px, 20vh));
+  grid-template-rows: minmax(80px, auto) repeat(4, minmax(200px, 20vh)) repeat(
+      2,
+      auto
+    );
   grid-auto-rows: 0px;
   grid-gap: 0px;
   @media (max-width: 767px) {
@@ -156,6 +161,7 @@ const StyledMain = styled.div`
 
 const Introtext = styled.div`
   grid-column: 1 / 4;
+  grid-row: 6 / 6;
   margin-top: 1.5em;
   display: grid;
   grid-template-columns: minmax(10%, 20%) minmax(40%, 70%) minmax(10%, 20%);
@@ -235,6 +241,7 @@ class Main extends React.Component {
             Dave at 802.282.3368 and learn how we can help.
           </p>
         </Introtext>
+        <Portfolio user={'DaveLindberg'} showFeatured />
       </StyledMain>
     );
   }

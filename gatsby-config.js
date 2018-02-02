@@ -40,13 +40,13 @@ module.exports = {
         pathToConfigModule: `src/utils/typography.js`
       }
     },
-    'gatsby-plugin-styled-components',
-    'gatsby-plugin-sharp',
     'gatsby-plugin-offline',
     'gatsby-plugin-react-next',
-    'gatsby-transformer-remark',
+    'gatsby-plugin-sharp',
     'gatsby-transformer-json',
+    'gatsby-transformer-remark',
+    'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
-    'gatsby-transformer-sharp'
+    'gatsby-plugin-styled-components'
   ]
 };
