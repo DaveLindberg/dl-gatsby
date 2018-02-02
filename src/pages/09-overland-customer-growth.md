@@ -2,15 +2,17 @@
   index: 09
   tilenum: "09"
   tile: "customers"
+  title: "How Changing Your Goals Changes Your Customers"
   date: "2018-01-15"
   image: "/assets/images/overland.jpg"
   message: "Changing your expectations"
   message2: "can change everything."
   cta: "Case Study: Overland Sheepskin"
-  pullquote: "\"We developed a new approach to market high-end luxury outerwear online.\""
+  pullquote: "We developed a new approach to market high-end luxury outerwear online. Within three seasons, online revenue tripled."
+  testimonial: "\"As Marketing and eCommerce Director for a thriving retail website, Dave possesses an uncanny ability to oversee a mind-boggling number of details.\"<br /><span>–Christine Schrum, <br />Content Manager</span> "
 ---
 
-# How Changing Your Goals Changes Your Customers
+<div>
 
 Back in the day, when we first started consulting with the team at Overland Sheepskin, one belief widely shared by management was the adage that “nobody buys coats on the internet.” Innate biases always limit our own performance. For a click-and-mortar establishment, the expectation that only retail stores would move the bigger-ticket items had relegated their online efforts to sub-par performance, selling lower-margined footwear and accessories.
 
@@ -21,3 +23,5 @@ The results? Within three seasons, online revenue _tripled_, as outerwear sales 
 We had to change our expectations of how our customers might respond. Only then could we work to help make their new behavior a reality.
 
 Imagine what a fresh perspective can bring to your marketing efforts. Reach out to Dave and schedule a discussion. It may change the way you think about your business.
+
+</div>

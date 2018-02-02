@@ -2,15 +2,16 @@
   index: 11
   tilenum: "11"
   tile: "attract"
+  title: "SEO for Everybody (and Vice Versa)"
   date: "2018-01-16"
   image: "/assets/images/jimbo.jpg"
   message: "SEO is everywhere. Decisions on content, campaigns, coding, and communications"
-  message2: "all impact how well your web site delivers its message."
+  messagex: "all impact how well your web site delivers its message."
   cta: "Modern SEO"
   pullquote: “Starting the process now can indeed produce verifiable results quickly.”
 ---
 
-# SEO for Everybody (and Vice Versa)
+<div>
 
 SEO is one of the most commonly misunderstood components of online marketing today. Even its title is outdated: SEO encompasses so much more than search engine visibility, it ought to be renamed “UO” for User Optimization, since the qualities that encourage search engines to rank your site are exactly those that make your site accessible and usable. Heck, let’s just call it what it is: “O”.
 
@@ -23,3 +24,5 @@ The second branch, managing off-site relationships, requires long-term planning 
 Getting SEO right requires the dedication of people across the team. Product managers, content producers, and developers all have a major impact. That’s why it’s so important to get the right tools in place and support each person in the mix.
 
 Our experience in SEO runs from simple on-page improvement assignments, to refocusing interdisciplinary marketing teams. Regardless of scope, we deliver consistent and measurable results.
+
+</div>

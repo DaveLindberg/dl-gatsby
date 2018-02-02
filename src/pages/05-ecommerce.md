@@ -1,17 +1,17 @@
 ---
   index: 05
   tilenum: "05"
+  title: "Ecommerce requires balance. And that’s our strength."
   tile: "build"
   date: "2018-01-15"
   image: "/assets/images/seedlings.jpg"
-  message: "Deep experience in Wordpress and WooCommerce. Certified BigCommerce partner."
+  message: "Deep experience in WooCommerce. Certified BigCommerce partner."
   messagex: "We build sites that sell."
   cta: "Ecommerce: Planning for Success"
   pullquote: "A well-balanced site provides a stable platform for business growth."
 ---
 
-# # Ecommerce requires balance. And that’s our strength.
-
+<div>
 Building a successful ecommerce site requires an intricate awareness of user experience on the front end, and reliable, workable integrations for the admins in the back end. Without ensuring that both are aligned and in tune, any efforts to create sustainable online sales will tilt toward trouble. A well-balanced site provides a stable platform for business growth.
 
 Facing the consumer, the first order of business is a range of products or services that are right for the marketplace. Simply put, they solve a perceived problem for a defined audience.
@@ -27,3 +27,5 @@ For businesses with more specific needs, we offer highly customized ecommerce si
 Our proven experience in online sales includes sporting goods, soft goods, luggage, outerwear, footwear, food and beverages, collectibles, and custom furnishings. Whether you’re launching a new venture or looking to improve your current site, investing in a ten-minute call now can result in a site that’s more functional, responsive, and profitable.
 
 Contact Dave directly via email or at 802 282-3368 today. Because when it comes to ecommerce, your business can hang in the balance.
+
+</div>

@@ -1,18 +1,17 @@
 ---
   index: 02
   tilenum: "02"
-  title: "If You Want to Create Happy Customers, We Plan on Helping."
+  title: "Creating Happy Customers? You Can Plan on It."
   tile: "generate"
   date: "2018-01-15"
   image: "meshpipe"
   message: "A successful marketing plan produces the right kind of traffic and a meaningful message."
   messagex: "The result? A profitable return on investment."
   cta: "Link to come"
-  pullqoute: "Planning for change has changed how we plan."
+  pullquote: "\"Planning for change has changed how we plan.\""
 ---
 
-# "If You Want to Create Happy Customers, We Plan on Helping.
-
+<div>
 A marketing plan should help answer the important questions.
 
 Like how to connect your products with the right people? What’s the relationship between a branded experience and brand engagement? And how can you differentiate your service in a way that _really matters_ to your market?
@@ -26,3 +25,5 @@ Our work is inspired by the proven framework of the Customer Journey, a consumer
 We work with businesses and entrepreneurs from around the Vermont/New Hampshire region—and across the nation—helping our clients integrate their marketing efforts, improve engagement, and realize better results.
 
 Learn more about how we can help. Call Dave direct at 802.282.3368 and let’s start a conversation.
+
+</div>

@@ -2,33 +2,39 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
-import espressoluv from '../assets/images/espressoluv.png'; //01
+import espressoluv from '../assets/images/espressoluv.jpg'; //01
 import meshpipe from '../assets/images/meshpipe.jpg'; //02
-import timclue from '../assets/images/timclue.png'; //03
+import timclue from '../assets/images/timclue.jpg'; //03
 import mychart from '../assets/images/mychart.jpg'; //04
 import seedlings from '../assets/images/seedlings.jpg'; //05
-import swimmer from '../assets/images/swimmer.jpg'; //06
-import sky from '../assets/images/sky.jpg'; //07
+import poolside from '../assets/images/poolside.jpg'; //06
+import binoculars from '../assets/images/binoculars.jpg'; //07
 import firepit from '../assets/images/firepit.jpg'; //08
 import overland from '../assets/images/overland.jpg'; //09
 import stoplight from '../assets/images/stoplight.jpg'; //10
-import jimbo from '../assets/images/jimbo.jpg'; //11
-import rally from '../assets/images/rally.png'; //12
+import grassy from '../assets/images/grassy.jpg'; //11
+import crowd from '../assets/images/crowd.jpg'; //12
 
-const Headline = styled.h1`
-  color: #cc9900;
+const Headline = styled.div`
   font-family: 'Oswald', sans-serif;
-  font-size: 4em;
   text-transform: capitalize;
   text-align: center;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
-  span {
+  h2 {
     color: #999999;
-    font-size: 60%;
-  }
-  @media (max-width: 767px) {
     font-size: 3em;
+    margin-bottom: 0px;
+    @media (max-width: 767px) {
+      font-size: 2em;
+    }
+  }
+  h1 {
+    font-size: 4em;
+    color: #cc9900;
+    @media (max-width: 767px) {
+      font-size: 3em;
+    }
   }
 `;
 
@@ -36,7 +42,7 @@ const StyledMain = styled.div`
   grid-area: main;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(100px, auto) repeat(4, 20vh);
+  grid-template-rows: minmax(80px, auto) repeat(4, minmax(200px, 20vh));
   grid-auto-rows: 0px;
   grid-gap: 0px;
   @media (max-width: 767px) {
@@ -145,25 +151,16 @@ const StyledMain = styled.div`
         grid-row: 2 / 3;
       }
     }
-    p {
-    }
-    a {
-      grid-column: 1 / -1;
-      grid-row: 5 / -1;
-      align-item: center;
-      align-self: start;
-      justify-self: center;
-      @media (max-width: 767px) {
-        font-size: 1em;
-        text-align: center;
-        margin: 0 10%;
-      }
-    }
-    a:hover {
-      color: #999900 !important;
-      border-color: #999900 !important;
-      background: rgba(0, 0, 0, 0.8);
-    }
+  }
+`;
+
+const Introtext = styled.div`
+  grid-column: 1 / 4;
+  margin-top: 1.5em;
+  display: grid;
+  grid-template-columns: minmax(10%, 20%) minmax(40%, 70%) minmax(10%, 20%);
+  p {
+    grid-column: 2 / 2;
   }
 `;
 
@@ -208,11 +205,36 @@ class Main extends React.Component {
     return (
       <StyledMain className="main" id="marketing">
         <Headline>
-          <span>Growing Your Business Takes </span>
-          <br />
-          More Than a Web Site.
+          <h2>Growing Your Business Takes </h2>
+          <h1>More Than a Web Site.</h1>
         </Headline>
         {Squares}
+        <Introtext>
+          <p>
+            How can you connect your products with the right people? What’s the
+            relationship between a branded experience and brand engagement? How
+            can you differentiate your service in a way that really matters to
+            your market?
+          </p>
+
+          <p>
+            Questions like these are at the core of what we do. We’re focused on
+            developing effective solutions to marketing challenges faced by
+            people like you. We design marketing strategies, campaigns, apps,
+            (and yes, even web sites) that help people help their customers.
+          </p>
+
+          <p>
+            We work with businesses and entrepreneurs in Vermont, New Hampshire
+            and beyond, helping our clients integrate their marketing efforts,
+            improve brand engagement, and realize better results.
+          </p>
+
+          <p>
+            Get more out of your website, and achieve your marketing goals. Call
+            Dave at 802.282.3368 and learn how we can help.
+          </p>
+        </Introtext>
       </StyledMain>
     );
   }
@@ -227,13 +249,13 @@ const bgImageChooser = title =>
     leads: timclue,
     campaigns: mychart,
     build: seedlings,
-    users: swimmer,
-    experiences: sky,
+    users: poolside,
+    experiences: binoculars,
     engage: firepit,
     customers: overland,
     interactions: stoplight,
-    attract: jimbo,
-    people: rally
+    attract: grassy,
+    people: crowd
   }[title]);
 
 const StyledSquare = styled.div`
@@ -261,36 +283,27 @@ const SquareH2 = styled.h2`
     font-size: 1em;
   }
 `;
-const Message = styled.p`
+const Message = styled.div`
+  letter-spacing: 1px;
   color: #ffffff;
   text-align: center;
-  letter-spacing: 4px;
-  text-transform: uppercase;
   align-self: center;
   font-size: 1em;
-  font-weight: 300;
+  font-style: italic;
   line-height: 1.8em;
+  font-weight: 100;
   grid-column: 1 / -1;
-  grid-row: 3 / 4;
+  grid-row: 3 / 3;
   padding: 0 25%;
   text-shadow: 0px 0px 4px #000;
   @media (max-width: 767px) {
     font-size: 1em;
   }
-`;
-const Messagex = styled.p`
-  color: #ffffff;
-  text-align: center;
-  align-self: center;
-  font-size: 1.2em;
-  font-weight: 300;
-  line-height: 1.8em;
-  grid-column: 1 / -1;
-  grid-row: 4 / 5;
-  padding: 0 25%;
-  text-shadow: 0px 0px 4px #000;
-  @media (max-width: 767px) {
-    font-size: 1em;
+  .intro {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-style: normal;
   }
 `;
 const LinkButton = styled.a`
@@ -302,6 +315,22 @@ const LinkButton = styled.a`
   padding: 0.5em 2em;
   border: 2px solid #cc9900;
   border-radius: 6px;
+  text-decoration: none;
+  grid-column: 1 / -1;
+  grid-row: 4 / -1;
+  align-item: center;
+  align-self: start;
+  justify-self: center;
+  :hover {
+    color: #999900 !important;
+    border-color: #999900 !important;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  @media (max-width: 767px) {
+    font-size: 1em;
+    text-align: center;
+    margin: 0 10%;
+  }
 `;
 
 class Square extends React.Component {
@@ -327,8 +356,10 @@ class Square extends React.Component {
         <ColorOverlay className="color-overlay">
           <Closer className="closer">X</Closer>
           <SquareH2>{this.props.title}</SquareH2>
-          <Message className="message">{this.props.message}</Message>
-          <Messagex className="messagex">{this.props.messagex}</Messagex>
+          <Message className="message">
+            <p className="intro">{this.props.message}</p>
+            <p>{this.props.messagex}</p>
+          </Message>
           <LinkButton className="LinkButton" href={this.props.link}>
             {this.props.cta}
           </LinkButton>
