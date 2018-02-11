@@ -47,6 +47,7 @@ module.exports = {
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
-    'gatsby-plugin-styled-components'
+    'gatsby-plugin-styled-components',
+    `gatsby-plugin-netlify` // make sure to put last in the array
   ]
 };
