@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
-import Portfolio from '../components/react-portfolio-behance/src/components/Portfolio/Portfolio.js';
-import Projects from '../components/react-portfolio-behance/src/components/Portfolio/Projects.js';
+import Portfolio from '../../react-portfolio-behance/src/components/Portfolio/Portfolio.js';
+import Projects from '../../react-portfolio-behance/src/components/Portfolio/Projects.js';
 
 import espressoluv from '../assets/images/espressoluv.jpg'; //01
 import meshpipe from '../assets/images/meshpipe.jpg'; //02
