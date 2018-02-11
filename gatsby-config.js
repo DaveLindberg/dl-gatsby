@@ -40,7 +40,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography.js`
       }
     },
-    'gatsby-plugin-offline',
     'gatsby-plugin-react-next',
     'gatsby-plugin-sharp',
     'gatsby-transformer-json',
