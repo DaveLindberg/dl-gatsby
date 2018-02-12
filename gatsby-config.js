@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'My Gatsby Site'
+    title: 'Dave Lindberg Marketing &amp; Design'
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorsYaml'

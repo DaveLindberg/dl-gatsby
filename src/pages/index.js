@@ -45,7 +45,7 @@ const StyledMain = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(80px, auto) repeat(4, minmax(200px, 20vh)) repeat(
-      2,
+      4,
       auto
     );
   grid-auto-rows: 0px;
@@ -168,6 +168,40 @@ const Introtext = styled.div`
   p {
     grid-column: 2 / 2;
   }
+  h2 {
+    font-size: 3em;
+    color: #cc9900;
+    grid-column: 2 / 2;
+    margin: 1.5em 0 0em 0;
+    text-align: center;
+  }
+`;
+
+const ContacText = styled.div`
+  grid-column: 1 / 4;
+  grid-row: 8 / 8;
+  margin-top: 0.5em;
+  padding: 2em 0 1em 0;
+  display: grid;
+  grid-template-columns: minmax(10%, 20%) minmax(40%, 70%) minmax(10%, 20%);
+  background-color: #f9f4e5;
+  p {
+    grid-column: 2 / 2;
+  }
+  h2 {
+    font-size: 3em;
+    color: #cc9900;
+    grid-column: 2 / 2;
+    margin: 0 0 0.5em 0;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: #999900;
+    :hover {
+      color: #cc9900;
+    }
+  }
 `;
 
 class Main extends React.Component {
@@ -240,8 +274,23 @@ class Main extends React.Component {
             Get more out of your website, and achieve your marketing goals. Call
             Dave at 802.282.3368 and learn how we can help.
           </p>
+          <h2>Want a Better Look?</h2>
+          <p style={{ textAlign: 'center' }}>
+            Feel free to browse this selection of projects covering brand
+            development, website, catalog and book design.
+          </p>
         </Introtext>
         <Portfolio user={'DaveLindberg'} showFeatured />
+        <ContacText id="contact">
+          <h2>Get in touch</h2>
+          <p>
+            Thanks for your interest in connecting. The best ways to contact me
+            are email (<a href="mailto:dave@davelindberg.com">
+              Dave@DaveLindberg.com
+            </a>) and phone (<a href="tel:802-282-3368">802 282-3368</a>).
+          </p>
+          <p>Our mailing address is PO Box 74, Hartland, VT 05048.</p>
+        </ContacText>
       </StyledMain>
     );
   }

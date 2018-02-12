@@ -622,3 +622,21 @@ pre tt:after {
     font-size: 100%;
   }
 }
+.NavDiv li a {
+  text-decoration: none;
+  color:  #CC9900;
+  padding: 0 0.75rem;
+  white-space: nowrap;
+  font-weight: 300;
+  cursor: pointer;
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    display: block;
+    padding: 0rem 0;
+    line-height: 133%;
+  }
+  :hover {
+    color: #CC9900;
+  }
+}
