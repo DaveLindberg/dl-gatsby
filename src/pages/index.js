@@ -43,9 +43,10 @@ const Headline = styled.div`
 const StyledMain = styled.div`
   grid-area: main;
   display: grid;
+  padding-bottom: 0px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(80px, auto) repeat(4, minmax(200px, 20vh)) repeat(
-      4,
+      3,
       auto
     );
   grid-auto-rows: 0px;
@@ -284,7 +285,7 @@ class Main extends React.Component {
         <ContacText id="contact">
           <h2>Get in touch</h2>
           <p>
-            Thanks for your interest in connecting. The best ways to contact me
+            Thanks for your interest in connecting. The best ways to contact us
             are email (<a href="mailto:dave@davelindberg.com">
               Dave@DaveLindberg.com
             </a>) and phone (<a href="tel:802-282-3368">802 282-3368</a>).

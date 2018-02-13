@@ -15,7 +15,8 @@ const typography = new Typography({
   ],
   headerFontFamily: ['Oswald', 'Helvetica', 'Arial', 'sans-serif'],
   bodyFontFamily: ['Source Sans Pro', 'Helvetica', 'Arial', 'sans-serif'],
-  headerColor: '#999900'
+  headerColor: '#999900',
+  bodyColor: '#796969'
 });
 
 export default typography;
