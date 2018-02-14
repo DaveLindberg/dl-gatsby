@@ -54,7 +54,10 @@ const StyledMain = styled.div`
   grid-gap: 0px;
   @media (max-width: 767px) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(60px, auto) repeat(6, 14vh);
+    grid-template-rows: minmax(60px, auto) repeat(6, minmax(200px, 14vh)) repeat(
+        3,
+        auto
+      );
   }
   .inactive {
     display: grid;

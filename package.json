@@ -21,6 +21,7 @@
     "gatsby-transformer-sharp": "^1.6.19",
     "gatsby-transformer-yaml": "^1.5.15",
     "jsonp": "^0.2.1",
+    "raf": "^3.4.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
     "react-scroll-to-component": "^1.0.2",
