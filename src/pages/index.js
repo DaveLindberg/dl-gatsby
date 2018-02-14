@@ -177,6 +177,9 @@ const Introtext = styled.div`
     margin: 1.5em 0 0em 0;
     text-align: center;
   }
+  @media (max-width: 767px) {
+    grid-column: 1 / 3;
+  }
 `;
 
 const ContacText = styled.div`
@@ -203,6 +206,9 @@ const ContacText = styled.div`
     :hover {
       color: #cc9900;
     }
+  }
+  @media (max-width: 767px) {
+    grid-column: 1 / 3;
   }
 `;
 
