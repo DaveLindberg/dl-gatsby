@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 import Portfolio from '../../react-portfolio-behance/src/components/Portfolio/Portfolio.js';
 import Projects from '../../react-portfolio-behance/src/components/Portfolio/Projects.js';
+import scrollToComponent from 'react-scroll-to-component';
 
 import espressoluv from '../assets/images/espressoluv.jpg'; //01
 import meshpipe from '../assets/images/meshpipe.jpg'; //02
@@ -398,6 +399,11 @@ class Square extends React.Component {
 
   handleIsActiveChange(e) {
     this.props.onIsActiveChange(this.props.id, !this.props.isActive);
+    scrollToComponent(this, {
+      offset: -5000,
+      align: 'top',
+      duration: 1500
+    });
   }
 
   render() {
