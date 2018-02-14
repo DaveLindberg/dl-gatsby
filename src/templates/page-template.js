@@ -33,7 +33,7 @@ const ImageChooser = tile =>
 
 const HTML = styled.div`
   display: grid;
-  grid-template-rows: auto repeat(3, 25vh);
+  grid-template-rows: auto repeat(3, auto);
   grid-column: 3 / span 1;
   grid-row: 3 / -1;
   color: #796969;
@@ -81,7 +81,7 @@ export default ({ data }) => {
         display: `grid`,
         gridTemplateColumns: `minmax(0,20%) minmax(10%,20%) minmax(40%,70%) minmax(10%,20%) minmax(0,20%)`,
         gridColumnGap: `30px`,
-        gridTemplateRows: `auto repeat(4, 25vh)`
+        gridTemplateRows: `auto  auto auto repeat(2, 25vh)`
       }}
     >
       <img
@@ -96,11 +96,10 @@ export default ({ data }) => {
       <h1
         style={{
           display: `grid`,
-          gridTemplateRows: `auto repeat(3,25vh)`,
           gridColumn: `3 / span 1`,
-          gridRow: `2 / -1`,
+          gridRow: `1 / 3`,
           zIndex: 100,
-          alignSelf: `stretch`,
+          alignSelf: `center`,
           color: `#ffffff`,
           textShadow: `2px 2px 4px #000`
         }}

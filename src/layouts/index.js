@@ -185,7 +185,9 @@ const TemplateWrapper = ({ children }) => (
       style={{
         margin: '0 auto',
         /* maxWidth: 960,*/
-        padding: '0px 0rem 0rem'
+        padding: '0px 0rem 0rem',
+        gridRowStart: 1,
+        gridRowEnd: 1
       }}
     >
       {children()}
