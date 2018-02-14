@@ -182,6 +182,7 @@ const Introtext = styled.div`
   }
   @media (max-width: 767px) {
     grid-column: 1 / 3;
+    grid-row: 8 / 8;
   }
 `;
 
@@ -212,6 +213,7 @@ const ContacText = styled.div`
   }
   @media (max-width: 767px) {
     grid-column: 1 / 3;
+    grid-row: 10 /10;
   }
 `;
 
