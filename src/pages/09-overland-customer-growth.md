@@ -6,7 +6,7 @@
   date: "2018-01-15"
   image: "/assets/images/overland.jpg"
   message: "Changing your expectations"
-  message2: "can change everything."
+  messagex: "can change everything."
   cta: "Case Study: Overland Sheepskin"
   pullquote: "We developed a new approach to market high-end luxury outerwear online. Within three seasons, online revenue tripled."
   testimonial: "\"As Marketing and eCommerce Director for a thriving retail website, Dave possesses an uncanny ability to oversee a mind-boggling number of details.\"<br /><span>–Christine Schrum, <br />Content Manager</span> "

@@ -6,7 +6,7 @@
   date: "2018-01-15"
   image: "/assets/images/binoculars.jpg"
   message: "Every user’s experience contributes directly to your bottom line. "
-  message2: "Our extensive experience contributes directly to theirs."
+  messagex: "Our extensive experience contributes directly to theirs."
   cta: "See the difference"
 ---
 

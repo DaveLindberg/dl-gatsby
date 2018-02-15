@@ -6,7 +6,7 @@
   date: "2018-01-16"
   image: "/assets/images/rally.png"
   message: "Let's Work Together."
-  message2: ""
+  messagex: ""
   cta: "Scale it up."
   pullquote: “Creative teams of skilled professionals deliver projects at any scale or complexity. ”
   link: "https://www.linkedin.com/in/davelindberg/"

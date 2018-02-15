@@ -6,7 +6,7 @@
   date: "2018-01-15"
   image: "/assets/images/firepit.jpg"
   message: "\"How does this fit within my life?\""
-  message2: "As customers explore and identify, we allow the story to unfold, and guide them through the purchase process."
+  messagex: "As customers explore and identify, we allow the story to unfold, and guide them through the purchase process."
   cta: "Case Study: Ayurvedik by shaninrenee"
   pullquote: "The brand brings life, context and relevance to its product, and provides a stable structure to grow on."
   testimonial: "\"The marketing professionals, potential customers, and Ayurvedic practitioners I bring this to are all consistent: The brand and presentation of this is incredible. A tremendous success.\"<br /><span>— Shanin Dockrey, Owner<br/>Ayurvedik by shaninrenee</span>"
