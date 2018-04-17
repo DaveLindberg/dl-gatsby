@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
+import Img from 'gatsby-image';
 
 import espressoluv from '../assets/images/espressoluv.jpg'; //01
 import meshpipe from '../assets/images/meshpipe.jpg'; //02
@@ -74,7 +75,7 @@ const Testimonial = styled.div`
 
 export default ({ data }) => {
   const page = data.markdownRemark;
-  console.log(data.markdownRemark, espressoluv);
+  console.log(data.titleImage);
   return (
     <div
       style={{
@@ -86,6 +87,7 @@ export default ({ data }) => {
     >
       <img
         src={ImageChooser(data.markdownRemark.frontmatter.tile)}
+        // sizes={props.titleImage.sizes}
         style={{
           gridColumn: `1 / -1`,
           gridRow: `1 / 3`,

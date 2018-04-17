@@ -4,19 +4,7 @@ import styled from 'styled-components';
 import Portfolio from '../../react-portfolio-behance/src/components/Portfolio/Portfolio.js';
 import Projects from '../../react-portfolio-behance/src/components/Portfolio/Projects.js';
 import scrollToComponent from 'react-scroll-to-component';
-
-import espressoluv from '../assets/images/espressoluv.jpg'; //01
-import meshpipe from '../assets/images/meshpipe.jpg'; //02
-import timclue from '../assets/images/timclue.jpg'; //03
-import mychart from '../assets/images/mychart.jpg'; //04
-import seedlings from '../assets/images/seedlings.jpg'; //05
-import poolside from '../assets/images/poolside.jpg'; //06
-import binoculars from '../assets/images/binoculars.jpg'; //07
-import firepit from '../assets/images/firepit.jpg'; //08
-import overland from '../assets/images/overland.jpg'; //09
-import stoplight from '../assets/images/stoplight.jpg'; //10
-import grassy from '../assets/images/grassy.jpg'; //11
-import crowd from '../assets/images/crowd.jpg'; //12
+import Img from 'gatsby-image';
 
 const Headline = styled.div`
   font-family: 'Oswald', sans-serif;
@@ -233,28 +221,32 @@ class Main extends React.Component {
     console.log(this.state.activeItem);
   }
   render() {
-    const { data: { allMarkdownRemark: { edges } } } = this.props;
+    // const { data: { allMarkdownRemark: { edges } } } = this.props;
+    const { data } = this.props;
     const Squares = this.props.data.allMarkdownRemark.edges.map(edge => (
-      <Square
-        key={edge.node.id}
-        id={edge.node.id}
-        tilenum={edge.node.frontmatter.tilenum}
-        title={edge.node.frontmatter.tile}
-        message={edge.node.frontmatter.message}
-        messagex={edge.node.frontmatter.messagex}
-        background={edge.node.frontmatter.image}
-        cta={edge.node.frontmatter.cta}
-        link={edge.node.fields.slug}
-        isActive={this.state.activeItem === edge.node.id}
-        className={
-          this.state.activeItem === edge.node.id
-            ? this.state.activeClassName
-            : 'inactive'
-        }
-        onIsActiveChange={this.handleIsActiveChange}
-      />
+      <div>
+        <Square
+          key={edge.node.id}
+          id={edge.node.id}
+          tilenum={edge.node.frontmatter.tilenum}
+          title={edge.node.frontmatter.tile}
+          message={edge.node.frontmatter.message}
+          messagex={edge.node.frontmatter.messagex}
+          background={edge.node.frontmatter.image}
+          cta={edge.node.frontmatter.cta}
+          link={edge.node.fields.slug}
+          isActive={this.state.activeItem === edge.node.id}
+          className={
+            this.state.activeItem === edge.node.id
+              ? this.state.activeClassName
+              : 'inactive'
+          }
+          onIsActiveChange={this.handleIsActiveChange}
+        />
+        <Img sizes={this.props.data.imageEspressoluv.sizes} />
+      </div>
     ));
-    console.log(Squares, this.state);
+    // console.log(Squares, this.state);
     return (
       <StyledMain className="main" id="marketing">
         <Headline>
@@ -311,26 +303,10 @@ class Main extends React.Component {
 
 export default Main;
 
-const bgImageChooser = title =>
-  ({
-    brands: espressoluv,
-    generate: meshpipe,
-    leads: timclue,
-    campaigns: mychart,
-    build: seedlings,
-    users: poolside,
-    experiences: binoculars,
-    engage: firepit,
-    customers: overland,
-    interactions: stoplight,
-    attract: grassy,
-    people: crowd
-  }[title]);
-
 const StyledSquare = styled.div`
-  background: url(${props => bgImageChooser(props.title)});
   background-size: cover;
   padding: 0em;
+  <Img sizes={this.props.data.{title}.sizes} />
 `;
 
 const ColorOverlay = styled.div`
@@ -465,6 +441,66 @@ export const query = graphql`
           }
           id
         }
+      }
+    }
+    imageEspressoluv: imageSharp(id: { regex: "/espressoluv.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    meshpipe: imageSharp(id: { regex: "/meshpipe.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    timclue: imageSharp(id: { regex: "/timclue.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    mychart: imageSharp(id: { regex: "/mychart.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    seedlings: imageSharp(id: { regex: "/seedlings.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    poolside: imageSharp(id: { regex: "/poolside.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    binoculars: imageSharp(id: { regex: "/binoculars.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    firepit: imageSharp(id: { regex: "/firepit.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    overland: imageSharp(id: { regex: "/overland.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    stoplight: imageSharp(id: { regex: "/stoplight.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    grassy: imageSharp(id: { regex: "/grassy.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    people: imageSharp(id: { regex: "/crowd.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
       }
     }
   }

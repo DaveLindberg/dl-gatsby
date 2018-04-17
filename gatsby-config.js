@@ -40,6 +40,15 @@ module.exports = {
         pathToConfigModule: `src/utils/typography.js`
       }
     },
+    {
+      resolve: `gatsby-source-behance`,
+      options: {
+        // Visit your profile and grab the name after behance.net/<< username >>
+        username: 'DaveLindberg',
+        // You can get your API Key here: https://www.behance.net/dev/register
+        apiKey: 'IMFOXfsNlR5RXIJS4gqXvMDCqsiXw0Ag'
+      }
+    },
     'gatsby-plugin-react-next',
     'gatsby-plugin-sharp',
     'gatsby-transformer-json',
