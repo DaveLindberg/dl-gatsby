@@ -221,8 +221,8 @@ class Main extends React.Component {
     console.log(this.state.activeItem);
   }
   render() {
-    // const { data: { allMarkdownRemark: { edges } } } = this.props;
     const { data } = this.props;
+    console.log(data);
     const Squares = this.props.data.allMarkdownRemark.edges.map(edge => (
       <div>
         <Square
@@ -243,7 +243,6 @@ class Main extends React.Component {
           }
           onIsActiveChange={this.handleIsActiveChange}
         />
-        <Img sizes={this.props.data.imageEspressoluv.sizes} />
       </div>
     ));
     // console.log(Squares, this.state);
@@ -306,7 +305,6 @@ export default Main;
 const StyledSquare = styled.div`
   background-size: cover;
   padding: 0em;
-  <Img sizes={this.props.data.{title}.sizes} />
 `;
 
 const ColorOverlay = styled.div`
@@ -403,6 +401,7 @@ class Square extends React.Component {
         cta={this.props.cta}
         link={this.props.link}
       >
+        <Img sizes={this.props.background.childImageSharp.sizes} />
         <ColorOverlay className="color-overlay">
           <Closer className="closer">X</Closer>
           <SquareH2>{this.props.title}</SquareH2>
@@ -433,74 +432,19 @@ export const query = graphql`
             tilenum
             message
             messagex
-            image
             cta
             pullquote
             testimonial
             link
+            image {
+              childImageSharp {
+                sizes(maxWidth: 1240) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
-          id
         }
-      }
-    }
-    imageEspressoluv: imageSharp(id: { regex: "/espressoluv.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    meshpipe: imageSharp(id: { regex: "/meshpipe.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    timclue: imageSharp(id: { regex: "/timclue.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    mychart: imageSharp(id: { regex: "/mychart.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    seedlings: imageSharp(id: { regex: "/seedlings.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    poolside: imageSharp(id: { regex: "/poolside.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    binoculars: imageSharp(id: { regex: "/binoculars.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    firepit: imageSharp(id: { regex: "/firepit.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    overland: imageSharp(id: { regex: "/overland.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    stoplight: imageSharp(id: { regex: "/stoplight.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    grassy: imageSharp(id: { regex: "/grassy.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    people: imageSharp(id: { regex: "/crowd.jpg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
       }
     }
   }

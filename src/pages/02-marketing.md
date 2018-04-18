@@ -4,7 +4,7 @@
   title: "Creating Happy Customers? You Can Plan on It."
   tile: "generate"
   date: "2018-01-15"
-  image: "meshpipe"
+  image: "../assets/images/meshpipe.jpg"
   message: "A successful marketing plan produces the right kind of traffic and a meaningful message."
   messagex: "The result? A profitable return on investment."
   cta: "Plan for success"

@@ -4,7 +4,7 @@
   title: "A Focus on Users Helps the Upper Valley Aquatics Center Connect to Its Core"
   tile: "users"
   date: "2018-01-15"
-  image: "/assets/images/poolside.jpg"
+  image: "../assets/images/poolside.jpg"
   message: "At the core of all our work, you’ll find user-centered design."
   messagex: "From marketing to UI to print, results happen when people can meet their needs."
   cta: "Case Study: Upper Valley Aquatic Center"

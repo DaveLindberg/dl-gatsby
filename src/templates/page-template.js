@@ -126,7 +126,6 @@ export const query = graphql`
       frontmatter {
         title
         tile
-        image
         pullquote
         testimonial
       }

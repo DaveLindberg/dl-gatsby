@@ -4,7 +4,7 @@
   title: "The Brand, Hand-Crafted."
   tile: "brands"
   date: "2018-01-15"
-  image: "espressoluv.jpg"
+  image: "../assets/images/espressoluv.jpg"
   message: "They frame the conversation, adding context and meaning."
   messagex: " A coherent brand delivers tangible value."
   cta: "Building EspressoLuv"

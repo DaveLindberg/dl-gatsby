@@ -4,7 +4,7 @@
   title: "Ecommerce requires balance. And that’s our strength."
   tile: "build"
   date: "2018-01-15"
-  image: "/assets/images/seedlings.jpg"
+  image: "../assets/images/seedlings.jpg"
   message: "Deep experience in WooCommerce. Certified BigCommerce partner."
   messagex: "We build sites that sell."
   cta: "Ecommerce: Planning for Success"
