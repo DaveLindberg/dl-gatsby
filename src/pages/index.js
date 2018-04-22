@@ -5,36 +5,16 @@ import Portfolio from '../../react-portfolio-behance/src/components/Portfolio/Po
 import Projects from '../../react-portfolio-behance/src/components/Portfolio/Projects.js';
 import scrollToComponent from 'react-scroll-to-component';
 import Img from 'gatsby-image';
-
-const Headline = styled.div`
-  font-family: 'Oswald', sans-serif;
-  text-transform: capitalize;
-  text-align: center;
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
-  h2 {
-    color: #999999;
-    font-size: 3em;
-    margin-bottom: 0px;
-    @media (max-width: 767px) {
-      font-size: 2em;
-    }
-  }
-  h1 {
-    font-size: 4em;
-    color: #cc9900;
-    @media (max-width: 767px) {
-      font-size: 3em;
-    }
-  }
-`;
+import Headline from '../components/home/headline.js';
+import Introtext from '../components/home/intro-text.js';
+import ContacText from '../components/home/contact-text.js';
 
 const StyledMain = styled.div`
   grid-area: main;
   display: grid;
   padding-bottom: 0px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(80px, auto) repeat(4, minmax(200px, 20vh)) repeat(
+  grid-template-rows: minmax(80px, auto) repeat(4, minmax(100px, 20vh)) repeat(
       3,
       auto
     );
@@ -42,19 +22,25 @@ const StyledMain = styled.div`
   grid-gap: 0px;
   @media (max-width: 767px) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(60px, auto) repeat(6, minmax(200px, 14vh)) repeat(
+    grid-template-rows: minmax(60px, auto) repeat(6, minmax(100px, 14vh)) repeat(
         3,
         auto
       );
   }
+  .gatsby-image-outer-wrapper {
+    grid-column: 1 / -1 !important;
+    grid-row: 1 / -1;
+    overflow: hidden;
+  }
+
   .inactive {
     display: grid;
-    background-size: cover;
-    background-position: top center;
     font-size: 1.2em;
     grid-template-columns: 1fr 1em;
     grid-template-rows: 1fr;
     overflow: hidden;
+    height: 100%;
+    object-fit: cover;
     .color-overlay {
       background-color: rgba(0, 0, 0, 0);
       grid-column: 1 / -1;
@@ -73,15 +59,22 @@ const StyledMain = styled.div`
       align-self: stretch;
       text-align: center;
       .color-overlay {
-        background-color: rgba(0, 0, 0, 0.4);
+        overflow: hidden !important;
+        background-color: rgba(0, 0, 0, .4);
+        z-index: 5;
         transition: background 0.5s;
         padding: 0em;
+      }
+      img {
+        overflow: hidden;
+        }
       }
       h2 {
         height: 100%;
         padding: 0px;
         font-size: 2em;
         grid-row: 2 / 3;
+        z-index: 10;
         @media (max-width: 767px) {
           font-size: 1.5em;
         }
@@ -95,6 +88,7 @@ const StyledMain = styled.div`
     color: #ffffff;
     text-transform: capitalize;
     text-shadow: 2px 2px 4px #000;
+    z-index: 10;
     @media (max-width: 767px) {
       padding: 0 0;
       text-align: center;
@@ -149,59 +143,6 @@ const StyledMain = styled.div`
         grid-row: 2 / 3;
       }
     }
-  }
-`;
-
-const Introtext = styled.div`
-  grid-column: 1 / 4;
-  grid-row: 6 / 6;
-  margin-top: 1.5em;
-  display: grid;
-  grid-template-columns: minmax(10%, 20%) minmax(40%, 70%) minmax(10%, 20%);
-  p {
-    grid-column: 2 / 2;
-  }
-  h2 {
-    font-size: 3em;
-    color: #cc9900;
-    grid-column: 2 / 2;
-    margin: 1.5em 0 0em 0;
-    text-align: center;
-  }
-  @media (max-width: 767px) {
-    grid-column: 1 / 3;
-    grid-row: 8 / 8;
-  }
-`;
-
-const ContacText = styled.div`
-  grid-column: 1 / 4;
-  grid-row: 8 / 8;
-  margin-top: 0.5em;
-  padding: 2em 0 1em 0;
-  display: grid;
-  grid-template-columns: minmax(10%, 20%) minmax(40%, 70%) minmax(10%, 20%);
-  background-color: #f9f4e5;
-  p {
-    grid-column: 2 / 2;
-  }
-  h2 {
-    font-size: 3em;
-    color: #cc9900;
-    grid-column: 2 / 2;
-    margin: 0 0 0.5em 0;
-    text-align: center;
-  }
-  a {
-    text-decoration: none;
-    color: #999900;
-    :hover {
-      color: #cc9900;
-    }
-  }
-  @media (max-width: 767px) {
-    grid-column: 1 / 3;
-    grid-row: 10 /10;
   }
 `;
 
@@ -305,6 +246,7 @@ export default Main;
 const StyledSquare = styled.div`
   background-size: cover;
   padding: 0em;
+  z-index: 10;
 `;
 
 const ColorOverlay = styled.div`
@@ -401,7 +343,16 @@ class Square extends React.Component {
         cta={this.props.cta}
         link={this.props.link}
       >
-        <Img sizes={this.props.background.childImageSharp.sizes} />
+        <Img
+          sizes={this.props.background.childImageSharp.sizes}
+          style={{
+            gridColumn: '1 / -1',
+            gridRow: '1 / -1',
+            zIndex: 1,
+            objectFit: 'cover',
+            height: '100%'
+          }}
+        />
         <ColorOverlay className="color-overlay">
           <Closer className="closer">X</Closer>
           <SquareH2>{this.props.title}</SquareH2>
