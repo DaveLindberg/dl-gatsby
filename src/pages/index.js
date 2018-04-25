@@ -48,9 +48,7 @@ const StyledMain = styled.div`
       display: grid;
       min-height: 0px;
     }
-    .closer,
-    p,
-    a {
+    .closer, p, a {
       display: none;
     }
     :hover {
