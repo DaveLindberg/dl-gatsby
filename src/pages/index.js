@@ -184,7 +184,7 @@ class Main extends React.Component {
         />
       </div>
     ));
-    // console.log(Squares, this.state);
+    console.log(Squares, this.state);
     return (
       <StyledMain className="main" id="marketing">
         <Headline>
