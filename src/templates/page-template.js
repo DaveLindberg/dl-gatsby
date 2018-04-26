@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
+import Img from 'gatsby-image';
 
 import espressoluv from '../assets/images/espressoluv.jpg'; //01
 import meshpipe from '../assets/images/meshpipe.jpg'; //02
@@ -30,6 +31,19 @@ const ImageChooser = tile =>
     attract: grassy,
     people: crowd
   }[tile]);
+
+const PageGrid = styled.div`
+  display: grid;
+  gridtemplatecolumns: minmax(0, 20%) minmax(10%, 20%) minmax(40%, 70%)
+    minmax(10%, 20%) minmax(0, 20%);
+  gridcolumngap: 30px;
+  gridtemplaterows: auto auto auto repeat(2, 25vh);
+
+  .gatsby-image-outer-wrapper {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+`;
 
 const HTML = styled.div`
   display: grid;
@@ -74,9 +88,9 @@ const Testimonial = styled.div`
 
 export default ({ data }) => {
   const page = data.markdownRemark;
-  console.log(data.markdownRemark, espressoluv);
+  console.log(data.markdownRemark);
   return (
-    <div
+    <PageGrid
       style={{
         display: `grid`,
         gridTemplateColumns: `minmax(0,20%) minmax(10%,20%) minmax(40%,70%) minmax(10%,20%) minmax(0,20%)`,
@@ -84,13 +98,14 @@ export default ({ data }) => {
         gridTemplateRows: `auto  auto auto repeat(2, 25vh)`
       }}
     >
-      <img
-        src={ImageChooser(data.markdownRemark.frontmatter.tile)}
+      <Img
+        sizes={data.markdownRemark.frontmatter.image.childImageSharp.sizes}
         style={{
           gridColumn: `1 / -1`,
           gridRow: `1 / 3`,
           justifySelf: `center`,
-          zIndex: 10
+          zIndex: 10,
+          objectFit: `cover`
         }}
       />
       <h1
@@ -113,7 +128,7 @@ export default ({ data }) => {
       <Testimonial
         dangerouslySetInnerHTML={{ __html: page.frontmatter.testimonial }}
       />
-    </div>
+    </PageGrid>
   );
 };
 
