@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Portfolio from '../../react-portfolio-behance/src/components/Portfolio/Portfolio.js';
 import Projects from '../../react-portfolio-behance/src/components/Portfolio/Projects.js';
 import scrollToComponent from 'react-scroll-to-component';
+import Img from 'gatsby-image';
 
 import espressoluv from '../assets/images/espressoluv.jpg'; //01
 import meshpipe from '../assets/images/meshpipe.jpg'; //02
@@ -59,14 +60,20 @@ const StyledMain = styled.div`
         auto
       );
   }
+  .gatsby-image-outer-wrapper {
+    grid-column: 1 / -1 !important;
+    grid-row: 1 / -1;
+    overflow: hidden;
+  }
+
   .inactive {
     display: grid;
-    background-size: cover;
-    background-position: top center;
     font-size: 1.2em;
     grid-template-columns: 1fr 1em;
     grid-template-rows: 1fr;
     overflow: hidden;
+    height: 100%;
+    object-fit: cover;
     .color-overlay {
       background-color: rgba(0, 0, 0, 0);
       grid-column: 1 / -1;
@@ -85,7 +92,9 @@ const StyledMain = styled.div`
       align-self: stretch;
       text-align: center;
       .color-overlay {
+        overflow: hidden !important;
         background-color: rgba(0, 0, 0, 0.4);
+        z-index: 5;
         transition: background 0.5s;
         padding: 0em;
       }
@@ -107,6 +116,7 @@ const StyledMain = styled.div`
     color: #ffffff;
     text-transform: capitalize;
     text-shadow: 2px 2px 4px #000;
+    z-index: 10;
     @media (max-width: 767px) {
       padding: 0 0;
       text-align: center;
@@ -326,9 +336,9 @@ const bgImageChooser = title =>
   }[title]);
 
 const StyledSquare = styled.div`
-  background: url(${props => bgImageChooser(props.title)});
   background-size: cover;
   padding: 0em;
+  z-index: 10;
 `;
 
 const ColorOverlay = styled.div`
@@ -425,6 +435,17 @@ class Square extends React.Component {
         cta={this.props.cta}
         link={this.props.link}
       >
+        <Img
+          sizes={this.props.background.childImageSharp.sizes}
+          style={{
+            gridColumn: '1 / -1',
+            gridRow: '1 / -1',
+            zIndex: 1,
+            objectFit: 'cover',
+            height: '100%'
+          }}
+        />
+
         <ColorOverlay className="color-overlay">
           <Closer className="closer">X</Closer>
           <SquareH2>{this.props.title}</SquareH2>
