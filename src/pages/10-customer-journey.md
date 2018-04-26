@@ -4,7 +4,7 @@
   tile: "interactions"
   title: "Map Your Customers’ Journey and Discover a Way Forward"
   date: "2018-01-15"
-  image: "/assets/images/stoplight.jpg"
+  image: "../assets/images/stoplight.jpg"
   message: "The journey from ‘potential prospect’ to ‘engaged customer’"
   messagex: "involves a unique range of behaviors."
   cta: "Read about the Customer Journey"

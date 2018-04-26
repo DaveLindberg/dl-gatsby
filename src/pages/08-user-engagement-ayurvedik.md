@@ -4,7 +4,7 @@
   title: "Marketing is a One-to-One Experience."
   tile: "engage"
   date: "2018-01-15"
-  image: "/assets/images/firepit.jpg"
+  image: "../assets/images/firepit.jpg"
   message: "\"How does this fit within my life?\""
   messagex: "As customers explore and identify, we allow the story to unfold, and guide them through the purchase process."
   cta: "Case Study: Ayurvedik by shaninrenee"

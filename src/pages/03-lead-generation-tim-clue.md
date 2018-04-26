@@ -3,7 +3,7 @@
   tilenum: "03"
   title: "Tim Clue, Motivational Speaker, Takes the Lead"
   tile: "leads"
-  image: "/assets/images/timclue.png"
+  image: "../assets/images/timclue.jpg"
   message: "Connecting with people when they’re at a specific point in the purchase process."
   messagex: "Awareness leads to interest; interest leads to action. Actions lead to leads."
   cta: "Case Study: Tim Clue"

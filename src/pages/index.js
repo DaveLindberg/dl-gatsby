@@ -124,7 +124,6 @@ const StyledMain = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     align-items: stretch;
-
     .color-overlay {
       grid-column: 1 / 2;
       grid-row: 1 / -1;
@@ -145,7 +144,6 @@ const StyledMain = styled.div`
       grid-row: 1 / 2;
       justify-self: end;
     }
-
     h2 {
       font-size: 3em;
       color: #cc9900;
@@ -236,8 +234,8 @@ class Main extends React.Component {
     const { data: { allMarkdownRemark: { edges } } } = this.props;
     const Squares = this.props.data.allMarkdownRemark.edges.map(edge => (
       <Square
-        key={edge.node.id}
-        id={edge.node.id}
+        key={edge.node.frontmatter.tilenum.toString()}
+        id={edge.node.frontmatter.tilenum}
         tilenum={edge.node.frontmatter.tilenum}
         title={edge.node.frontmatter.tile}
         message={edge.node.frontmatter.message}
@@ -254,7 +252,7 @@ class Main extends React.Component {
         onIsActiveChange={this.handleIsActiveChange}
       />
     ));
-    console.log(Squares, this.state);
+    console.log(Squares);
     return (
       <StyledMain className="main" id="marketing">
         <Headline>
@@ -440,6 +438,7 @@ class Square extends React.Component {
         </ColorOverlay>
       </StyledSquare>
     );
+    console.log(StyledSquare, this.state);
   }
 }
 
@@ -457,7 +456,6 @@ export const query = graphql`
             tilenum
             message
             messagex
-            image
             cta
             pullquote
             testimonial

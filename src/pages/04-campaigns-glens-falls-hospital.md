@@ -4,7 +4,7 @@
   title: "Glens Falls Hospital: Managing Change in Community Healthcare"
   tile: "campaigns"
   date: "2018-01-15"
-  image: "/assets/images/mychart.jpg"
+  image: "../assets/images/mychart.jpg"
   message: "For any media, at every budget:"
   messagex: "We make it memorable. And ensure it’s actionable."
   cta: "Case Study: Glens Falls Hospital"

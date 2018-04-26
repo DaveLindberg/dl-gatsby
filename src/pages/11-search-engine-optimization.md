@@ -4,7 +4,7 @@
   tile: "attract"
   title: "SEO for Everybody (and Vice Versa)"
   date: "2018-01-16"
-  image: "/assets/images/jimbo.jpg"
+  image: "../assets/images/jimbo.jpg"
   message: "SEO is everywhere. Decisions on content, campaigns, coding, and communications"
   messagex: "all impact how well your web site delivers its message."
   cta: "Modern SEO"
