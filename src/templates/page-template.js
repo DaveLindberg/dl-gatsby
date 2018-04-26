@@ -126,6 +126,13 @@ export const query = graphql`
       frontmatter {
         title
         tile
+        image {
+          childImageSharp {
+            sizes(maxWidth: 1240) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
         pullquote
         testimonial
       }

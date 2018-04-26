@@ -160,31 +160,28 @@ class Main extends React.Component {
     console.log(this.state.activeItem);
   }
   render() {
-    const { data } = this.props;
-    console.log(data);
+    const { data: { allMarkdownRemark: { edges } } } = this.props;
     const Squares = this.props.data.allMarkdownRemark.edges.map(edge => (
-      <div>
-        <Square
-          key={edge.node.id}
-          id={edge.node.id}
-          tilenum={edge.node.frontmatter.tilenum}
-          title={edge.node.frontmatter.tile}
-          message={edge.node.frontmatter.message}
-          messagex={edge.node.frontmatter.messagex}
-          background={edge.node.frontmatter.image}
-          cta={edge.node.frontmatter.cta}
-          link={edge.node.fields.slug}
-          isActive={this.state.activeItem === edge.node.id}
-          className={
-            this.state.activeItem === edge.node.id
-              ? this.state.activeClassName
-              : 'inactive'
-          }
-          onIsActiveChange={this.handleIsActiveChange}
-        />
-      </div>
+      <Square
+        key={edge.node.frontmatter.tilenum.toString()}
+        id={edge.node.frontmatter.tilenum}
+        tilenum={edge.node.frontmatter.tilenum}
+        title={edge.node.frontmatter.tile}
+        message={edge.node.frontmatter.message}
+        messagex={edge.node.frontmatter.messagex}
+        background={edge.node.frontmatter.image}
+        cta={edge.node.frontmatter.cta}
+        link={edge.node.fields.slug}
+        isActive={this.state.activeItem === edge.node.id}
+        className={
+          this.state.activeItem === edge.node.id
+            ? this.state.activeClassName
+            : 'inactive'
+        }
+        onIsActiveChange={this.handleIsActiveChange}
+      />
     ));
-    console.log(Squares, this.state);
+    console.log(Squares);
     return (
       <StyledMain className="main" id="marketing">
         <Headline>
