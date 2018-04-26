@@ -460,6 +460,13 @@ export const query = graphql`
             pullquote
             testimonial
             link
+            image {
+              childImageSharp {
+                sizes(maxWidth: 1240) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
           id
         }
