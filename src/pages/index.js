@@ -144,7 +144,8 @@ const StyledMain = styled.div`
       grid-template-columns: 1fr 1em;
       grid-template-rows: 1em 3fr 1fr 1fr 3fr;
       background-color: rgba(0, 0, 0, 0.4);
-      transition: background 0.5s;
+      transition: background 0.5s
+      z-index: 10;
     }
     .closer {
       display: block;
@@ -253,9 +254,9 @@ class Main extends React.Component {
         background={edge.node.frontmatter.image}
         cta={edge.node.frontmatter.cta}
         link={edge.node.fields.slug}
-        isActive={this.state.activeItem === edge.node.id}
+        isActive={this.state.activeItem === edge.node.frontmatter.tilenum}
         className={
-          this.state.activeItem === edge.node.id
+          this.state.activeItem === edge.node.frontmatter.tilenum
             ? this.state.activeClassName
             : 'inactive'
         }
