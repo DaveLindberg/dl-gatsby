@@ -1,46 +1,14 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
-import Portfolio from '../../react-portfolio-behance/src/components/Portfolio/Portfolio.js';
-import Projects from '../../react-portfolio-behance/src/components/Portfolio/Projects.js';
 import scrollToComponent from 'react-scroll-to-component';
 import Img from 'gatsby-image';
-
-import espressoluv from '../assets/images/espressoluv.jpg'; //01
-import meshpipe from '../assets/images/meshpipe.jpg'; //02
-import timclue from '../assets/images/timclue.jpg'; //03
-import mychart from '../assets/images/mychart.jpg'; //04
-import seedlings from '../assets/images/seedlings.jpg'; //05
-import poolside from '../assets/images/poolside.jpg'; //06
-import binoculars from '../assets/images/binoculars.jpg'; //07
-import firepit from '../assets/images/firepit.jpg'; //08
-import overland from '../assets/images/overland.jpg'; //09
-import stoplight from '../assets/images/stoplight.jpg'; //10
-import grassy from '../assets/images/grassy.jpg'; //11
-import crowd from '../assets/images/crowd.jpg'; //12
-
-const Headline = styled.div`
-  font-family: 'Oswald', sans-serif;
-  text-transform: capitalize;
-  text-align: center;
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
-  h2 {
-    color: #999999;
-    font-size: 3em;
-    margin-bottom: 0px;
-    @media (max-width: 767px) {
-      font-size: 2em;
-    }
-  }
-  h1 {
-    font-size: 4em;
-    color: #cc9900;
-    @media (max-width: 767px) {
-      font-size: 3em;
-    }
-  }
-`;
+import Headline from '../components/Home/headline.js';
+import Square from '../components/Home/square.js';
+import Introtext from '../components/Home/intro-text.js';
+import Portfolio from '../../react-portfolio-behance/src/components/Portfolio/Portfolio.js';
+import Projects from '../../react-portfolio-behance/src/components/Portfolio/Projects.js';
+import ContacText from '../components/Home/contact-text.js';
 
 const StyledMain = styled.div`
   grid-area: main;
@@ -173,59 +141,6 @@ const StyledMain = styled.div`
   }
 `;
 
-const Introtext = styled.div`
-  grid-column: 1 / 4;
-  grid-row: 6 / 6;
-  margin-top: 1.5em;
-  display: grid;
-  grid-template-columns: minmax(10%, 20%) minmax(40%, 70%) minmax(10%, 20%);
-  p {
-    grid-column: 2 / 2;
-  }
-  h2 {
-    font-size: 3em;
-    color: #cc9900;
-    grid-column: 2 / 2;
-    margin: 1.5em 0 0em 0;
-    text-align: center;
-  }
-  @media (max-width: 767px) {
-    grid-column: 1 / 3;
-    grid-row: 8 / 8;
-  }
-`;
-
-const ContacText = styled.div`
-  grid-column: 1 / 4;
-  grid-row: 8 / 8;
-  margin-top: 0.5em;
-  padding: 2em 0 1em 0;
-  display: grid;
-  grid-template-columns: minmax(10%, 20%) minmax(40%, 70%) minmax(10%, 20%);
-  background-color: #f9f4e5;
-  p {
-    grid-column: 2 / 2;
-  }
-  h2 {
-    font-size: 3em;
-    color: #cc9900;
-    grid-column: 2 / 2;
-    margin: 0 0 0.5em 0;
-    text-align: center;
-  }
-  a {
-    text-decoration: none;
-    color: #999900;
-    :hover {
-      color: #cc9900;
-    }
-  }
-  @media (max-width: 767px) {
-    grid-column: 1 / 3;
-    grid-row: 10 /10;
-  }
-`;
-
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -317,152 +232,7 @@ class Main extends React.Component {
     );
   }
 }
-
 export default Main;
-
-const bgImageChooser = title =>
-  ({
-    brands: espressoluv,
-    generate: meshpipe,
-    leads: timclue,
-    campaigns: mychart,
-    build: seedlings,
-    users: poolside,
-    experiences: binoculars,
-    engage: firepit,
-    customers: overland,
-    interactions: stoplight,
-    attract: grassy,
-    people: crowd
-  }[title]);
-
-const StyledSquare = styled.div`
-  background-size: cover;
-  padding: 0em;
-  z-index: 10;
-`;
-
-const ColorOverlay = styled.div`
-  padding: 2em;
-  @media (max-width: 767px) {
-    padding: 1em 0;
-  }
-`;
-const Closer = styled.div`
-  color: #ffffff;
-  cursor: pointer;
-`;
-const SquareH2 = styled.h2`
-  color: darkgoldenrod;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  text-transform: capitalize;
-  @media (max-width: 767px) {
-    font-size: 1em;
-  }
-`;
-const Message = styled.div`
-  letter-spacing: 1px;
-  color: #ffffff;
-  text-align: center;
-  align-self: center;
-  font-size: 1em;
-  font-style: italic;
-  line-height: 1.8em;
-  font-weight: 100;
-  grid-column: 1 / -1;
-  grid-row: 3 / 3;
-  padding: 0 25%;
-  text-shadow: 0px 0px 4px #000;
-  @media (max-width: 767px) {
-    font-size: 1em;
-  }
-  .intro {
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    font-style: normal;
-  }
-`;
-const LinkButton = styled.a`
-  display: block;
-  color: #cc9900 !important;
-  font-size: 1.2em;
-  font-weight: 100;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 0.5em 2em;
-  border: 2px solid #cc9900;
-  border-radius: 6px;
-  text-decoration: none;
-  grid-column: 1 / -1;
-  grid-row: 4 / -1;
-  align-item: center;
-  align-self: start;
-  justify-self: center;
-  :hover {
-    color: #999900 !important;
-    border-color: #999900 !important;
-    background: rgba(0, 0, 0, 0.8);
-  }
-  @media (max-width: 767px) {
-    font-size: 1em;
-    text-align: center;
-    margin: 0 10%;
-  }
-`;
-
-class Square extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleIsActiveChange = this.handleIsActiveChange.bind(this);
-  }
-
-  handleIsActiveChange(e) {
-    this.props.onIsActiveChange(this.props.id, !this.props.isActive);
-    scrollToComponent(this, {
-      offset: -5000,
-      align: 'top',
-      duration: 1500
-    });
-  }
-
-  render() {
-    return (
-      <StyledSquare
-        onClick={this.handleIsActiveChange}
-        className={this.props.className + ' ' + this.props.title}
-        key={this.props.id}
-        title={this.props.title}
-        cta={this.props.cta}
-        link={this.props.link}
-      >
-        <Img
-          sizes={this.props.background.childImageSharp.sizes}
-          style={{
-            gridColumn: '1 / -1',
-            gridRow: '1 / -1',
-            zIndex: 1,
-            objectFit: 'cover',
-            height: '100%'
-          }}
-        />
-
-        <ColorOverlay className="color-overlay">
-          <Closer className="closer">X</Closer>
-          <SquareH2>{this.props.title}</SquareH2>
-          <Message className="message">
-            <p className="intro">{this.props.message}</p>
-            <p>{this.props.messagex}</p>
-          </Message>
-          <LinkButton className="LinkButton" href={this.props.link}>
-            {this.props.cta}
-          </LinkButton>
-        </ColorOverlay>
-      </StyledSquare>
-    );
-    console.log(StyledSquare, this.state);
-  }
-}
 
 export const query = graphql`
   query IndexQuery {
