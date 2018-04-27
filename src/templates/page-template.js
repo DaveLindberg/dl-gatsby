@@ -3,35 +3,6 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 
-import espressoluv from '../assets/images/espressoluv.jpg'; //01
-import meshpipe from '../assets/images/meshpipe.jpg'; //02
-import timclue from '../assets/images/timclue.jpg'; //03
-import mychart from '../assets/images/mychart.jpg'; //04
-import seedlings from '../assets/images/seedlings.jpg'; //05
-import poolside from '../assets/images/poolside.jpg'; //06
-import binoculars from '../assets/images/binoculars.jpg'; //07
-import firepit from '../assets/images/firepit.jpg'; //08
-import overland from '../assets/images/overland.jpg'; //09
-import stoplight from '../assets/images/stoplight.jpg'; //10
-import grassy from '../assets/images/grassy.jpg'; //11
-import crowd from '../assets/images/crowd.jpg'; //12
-
-const ImageChooser = tile =>
-  ({
-    brands: espressoluv,
-    generate: meshpipe,
-    leads: timclue,
-    campaigns: mychart,
-    build: seedlings,
-    users: poolside,
-    experiences: binoculars,
-    engage: firepit,
-    customers: overland,
-    interactions: stoplight,
-    attract: grassy,
-    people: crowd
-  }[tile]);
-
 const PageGrid = styled.div`
   display: grid;
   gridtemplatecolumns: minmax(0, 20%) minmax(10%, 20%) minmax(40%, 70%)

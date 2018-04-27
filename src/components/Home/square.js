@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
+import scrollToComponent from 'react-scroll-to-component';
+
 import StyledSquare from './styled-square.js';
 import ColorOverlay from './color-overlay.js';
 import Closer from '../closer.js';
