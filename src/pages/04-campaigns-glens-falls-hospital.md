@@ -1,4 +1,5 @@
 ---
+  content-type: "page"
   index: 04
   tilenum: "04"
   title: "Glens Falls Hospital: Managing Change in Community Healthcare"

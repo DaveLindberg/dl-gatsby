@@ -1,4 +1,5 @@
 ---
+  content-type: "page"
   index: 10
   tilenum: "10"
   tile: "interactions"

@@ -1,4 +1,5 @@
 ---
+  content-type: "page"
   index: 12
   tilenum: "12"
   tile: "people"

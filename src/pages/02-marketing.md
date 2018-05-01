@@ -1,4 +1,5 @@
 ---
+  content-type: "page"
   index: 02
   tilenum: "02"
   title: "Creating Happy Customers? You Can Plan on It."

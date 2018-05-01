@@ -1,4 +1,5 @@
 ---
+  content-type: "page"
   index: 01
   tilenum: "01"
   title: "The Brand, Hand-Crafted."

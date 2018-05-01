@@ -1,4 +1,5 @@
 ---
+  content-type: "page"
   index: 11
   tilenum: "11"
   tile: "attract"
