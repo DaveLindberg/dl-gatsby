@@ -1,5 +1,5 @@
 ---
-  content-type: "page"
+  contenttype: "page"
   index: 08
   tilenum: "08"
   title: "Marketing is a One-to-One Experience."

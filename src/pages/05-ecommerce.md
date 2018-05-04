@@ -1,5 +1,5 @@
 ---
-  content-type: "page"
+  contenttype: "page"
   index: 05
   tilenum: "05"
   title: "Ecommerce requires balance. And that’s our strength."

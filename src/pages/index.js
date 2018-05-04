@@ -236,7 +236,10 @@ export default Main;
 
 export const query = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___index], order: ASC }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { contenttype: { eq: "page" } } }
+      sort: { fields: [frontmatter___index], order: ASC }
+    ) {
       edges {
         node {
           fields {

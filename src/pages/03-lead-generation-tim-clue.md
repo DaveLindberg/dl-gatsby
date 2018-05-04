@@ -1,5 +1,5 @@
 ---
-  content-type: "page"
+  contenttype: "page"
   index: 03
   tilenum: "03"
   title: "Tim Clue, Motivational Speaker, Takes the Lead"

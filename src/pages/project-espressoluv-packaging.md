@@ -1,5 +1,5 @@
 ---
-  content-type: "project"
+  contenttype: "project"
   title: "Espresso Luv Coffee Package"
   client: Espresso Luv"
   date: "2017-09-01"

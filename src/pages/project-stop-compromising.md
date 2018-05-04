@@ -1,5 +1,5 @@
 ---
-  content-type: "project"
+  contenttype: "project"
   title: "Stop Compromising: The CEO's Guide to Building Value Through Smarter Finance"
   client: Rudi Scheiber-Kurtz"
   date: "2017-10-04"

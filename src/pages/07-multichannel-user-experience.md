@@ -1,5 +1,5 @@
 ---
-  content-type: "page"
+  contenttype: "page"
   index: 07
   tilenum: "07"
   title: "Gain a Better View of Your Users."

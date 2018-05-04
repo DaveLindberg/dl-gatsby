@@ -1,5 +1,5 @@
 ---
-  content-type: "page"
+  contenttype: "page"
   index: 09
   tilenum: "09"
   tile: "customers"
