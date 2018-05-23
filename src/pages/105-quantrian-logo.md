@@ -1,10 +1,11 @@
 ---
   contenttype: "project"
-  index: 05
+  index: 105
   title: "Quantrian Logo"
   client: Quantrian"
   date: "2017-07-01"
-  creative-fields: "art direction, branding"
+  creative-fields: "Art Direction, Branding"
+  card-image: "../assets/images/card-quantrian-logo.jpg"
   image-1: "../assets/images/quantrian-logo.jpg"
   image-2: ""
   image-3: ""

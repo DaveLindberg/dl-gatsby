@@ -4,11 +4,13 @@
   title: "Ayurvedik by shaninrenee Brand Identity"
   client: Ayurvedik by Shanin Renee"
   date: "2016-10-01"
-  creative-fields: "art direction, graphic design, typography"
+  creative-fields: "Art Direction, Graphic Design, Typography"
+  card-image: "../assets/images/card-ayurvedik-brand-identity.jpg"
   image-1: "../assets/images/ayurvedik-brand-identity-01.jpg"
   image-2: "../assets/images/ayurvedik-brand-identity-02.jpg"
   image-3: "../assets/images/ayurvedik-brand-identity-03.jpg"
   image-4: ""
+  see-also: "106, 107, 108"
 ---
 
 <p className=copy_A>"<strong>Ayurvedik by shaninrenee™ </strong> brand development for spa and skincare products. Variations on the primary logo are used in differing contexts to better integrate the brand and its company.

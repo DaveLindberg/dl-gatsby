@@ -4,11 +4,13 @@
   title: "Ayurvedik Wellness Website"
   client: Ayurvedik by Shanin Renee"
   date: "2016-09-01"
-  creative-fields: "art direction, site design, ecommerce, UX"
+  creative-fields: "Art Direction, eCommerce, Site Design, UX"
+  card-image: "../assets/images/card-ayurvedik-website.jpg"
   image-1: "../assets/images/ayurvedik-website-01.png"
   image-2: "../assets/images/ayurvedik-website-02.png"
   image-3: "../assets/images/ayurvedik-website-03.png"
   image-4: ""
+  see-also: "107, 108, 109"
 ---
 
 <p className=copy_A>"<strong>AyurvedikWellness.com</strong> Site design and ecommerce management. Built on Wordpress and WooCommerce.
