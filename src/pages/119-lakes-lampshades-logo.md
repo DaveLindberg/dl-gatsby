@@ -4,12 +4,13 @@
   title: "Lake's Lampshades Logo"
   client: Lake's Lampshades"
   date: "2010-07-01"
-  creative-fields: "Art Direction, Branding"
-  card-image: "../assets/images/card-lakes-lampshades-logo.png"
-  image-1: "../assets/images/lakes-lampshades-logo.png"
-  image-2: ""
-  image-3: ""
-  image-4: ""
+  creative_fields: "Art Direction, Branding"
+  card_image: "../assets/images/card-lakes-lampshades-logo.png"
+  image_1: "../assets/images/lakes-lampshades-logo.png"
+  image_2: ""
+  image_3: ""
+  image_4: ""
+  see_also: ""
 ---
 
 <p className=copy_A>"<strong>Lake's Lampshades</strong> Logo design for hand-crafted lampshade artist's studio and shop.

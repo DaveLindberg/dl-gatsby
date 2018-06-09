@@ -1,16 +1,16 @@
 ---
   contenttype: "project"
-  index: 04
+  index: 104
   title: "EspressoLuv.com Website"
   client: Espresso Luv"
   date: "2017-12-01"
-  creative-fields: "Art Direction, eCommerce, Site Design, UX"
-  card-image: "../assets/images/card-espressoluv-website.jpg"
-  image-1: "../assets/images/espressoluv-website-01.jpg"
-  image-2: "../assets/images/espressoluv-website-02.jpg"
-  image-3: "../assets/images/espressoluv-website-03.jpg"
-  image-4: ""
-  see-also: "102, 103"
+  creative_fields: "Art Direction, eCommerce, Site Design, UX"
+  card_image: "../assets/images/card-espressoluv-website.jpg"
+  image_1: "../assets/images/espressoluv-website-01.jpg"
+  image_2: "../assets/images/espressoluv-website-02.jpg"
+  image_3: "../assets/images/espressoluv-website-03.jpg"
+  image_4: ""
+  see_also: "102, 103"
 ---
 
 <p className=copy_A>"<strong>EspressoLuv.com</strong> Site design, development and ecommerce for hand-roasted coffee roaster, built on the WooCommerce platform.

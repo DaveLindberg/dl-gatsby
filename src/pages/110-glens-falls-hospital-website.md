@@ -4,13 +4,13 @@
   title: "Glens Falls Hospital Website"
   client: Glens Falls Hospital, Glens Falls, NY"
   date: "2015-03-01"
-  creative-fields: "Art Direction, Site Design"
-  card-image: "../assets/images/card-glens-falls-hospital-website.jpg"
-  image-1: "../assets/images/glens-falls-hospital-website-01.jpg"
-  image-2: ""
-  image-3: ""
-  image-4: ""
-  see-also: "111, 112"
+  creative_fields: "Art Direction, Site Design"
+  card_image: "../assets/images/card-glens-falls-hospital-website.jpg"
+  image_1: "../assets/images/glens-falls-hospital-website-01.jpg"
+  image_2: ""
+  image_3: ""
+  image_4: ""
+  see_also: "111, 112"
 ---
 
 <p className=copy_A>"<strong>Glens Falls Hospital </strong> Redesigned and reskinned existing CMS with new branding, UX and campaign visuals.

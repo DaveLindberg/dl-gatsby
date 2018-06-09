@@ -6,8 +6,7 @@ import Img from 'gatsby-image';
 import Headline from '../components/Home/headline.js';
 import Square from '../components/Home/square.js';
 import Introtext from '../components/Home/intro-text.js';
-import Portfolio from '../../react-portfolio-behance/src/components/Portfolio/Portfolio.js';
-import Projects from '../../react-portfolio-behance/src/components/Portfolio/Projects.js';
+import NewProjects from '../components/Portfolio/NewProjects.js';
 import ContacText from '../components/Home/contact-text.js';
 
 const StyledMain = styled.div`
@@ -217,7 +216,7 @@ class Main extends React.Component {
             development, website, catalog and book design.
           </p>
         </Introtext>
-        <Portfolio user={'DaveLindberg'} showFeatured />
+        <NewProjects />
         <ContacText id="contact">
           <h2>Get in touch</h2>
           <p>

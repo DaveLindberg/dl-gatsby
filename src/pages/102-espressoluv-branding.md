@@ -4,13 +4,13 @@
   title: "Espresso Luv Brand Development"
   client: Espresso Luv"
   date: "2017-08-01"
-  creative-fields: "Art Direction, Branding"
-  card-image: "../assets/images/card-espressoluv-brand.png"
-  image-1: "../assets/images/espressoluv-brand-01.png"
-  image-2: "../assets/images/espressoluv-brand-02.png"
-  image-3: "../assets/images/espressoluv-brand-03.png"
-  image-4: ""
-  see-also: "103, 104"
+  creative_fields: "Art Direction, Branding"
+  card_image: "../assets/images/card-espressoluv-brand.png"
+  image_1: "../assets/images/espressoluv-brand-01.png"
+  image_2: "../assets/images/espressoluv-brand-02.png"
+  image_3: "../assets/images/espressoluv-brand-03.png"
+  image_4: ""
+  see_also: "103, 104"
 ---
 
 <p className=copy_A>"<strong>EspressoLuv Brand Development</strong> for artisan espresso bean roaster and online storefront.

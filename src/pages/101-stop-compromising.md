@@ -4,13 +4,13 @@
   title: "Stop Compromising: The CEO's Guide to Building Value Through Smarter Finance"
   client: Rudi Scheiber-Kurtz"
   date: "2017-10-04"
-  creative-fields: "Art Direction, Book Design"
-  card-image: "../assets/images/card-stop-compromising.jpg"
-  image-1: "../assets/images/StopCompromisingCover.jpg"
-  image-2: "../assets/images/StopCompromisingPartOne.jpg"
-  image-3: "../assets/images/StopCompromising_p28-29.jpg"
-  image-4: "../assets/images/StopCompromising_p94-95.jpg"
-  see-also: "115"
+  creative_fields: "Art Direction, Book Design"
+  card_image: "../assets/images/card-stop-compromising.jpg"
+  image_1: "../assets/images/StopCompromisingCover.jpg"
+  image_2: "../assets/images/StopCompromisingPartOne.jpg"
+  image_3: "../assets/images/StopCompromising_p28-29.jpg"
+  image_4: "../assets/images/StopCompromising_p94-95.jpg"
+  see_also: "115"
 ---
 
 <p className=copy_A>"<strong>Book design:</strong> cover, typography, layout and information graphics. "</p>

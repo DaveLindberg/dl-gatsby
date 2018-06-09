@@ -4,13 +4,13 @@
   title: "Faces of Long Trail School Booklet"
   client: Long Trail School, Dorset, VT"
   date: "2014-10-01"
-  creative-fields: "Art Direction, Graphic Design"
-  card-image: "../assets/images/card-faces-of-long-trail.jpg"
-  image-1: "../assets/images/faces-of-long-trail-01.png"
-  image-2: ""
-  image-3: ""
-  image-4: ""
-  see-also: "116"
+  creative_fields: "Art Direction, Graphic Design"
+  card_image: "../assets/images/card-faces-of-long-trail.jpg"
+  image_1: "../assets/images/faces-of-long-trail-01.png"
+  image_2: ""
+  image_3: ""
+  image_4: ""
+  see_also: "116"
 ---
 
 <p className=copy_A>"<strong>Long Trail School </strong> Hand-bound limited-edition recruitment/development brochure.

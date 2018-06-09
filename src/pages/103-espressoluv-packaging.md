@@ -4,13 +4,13 @@
   title: "Espresso Luv Coffee Package"
   client: Espresso Luv"
   date: "2017-09-01"
-  creative-fields: "Art Direction, Graphic Design, Package Design"
-  card-image: "../assets/images/card-espressoluv-packaging.jpg"
-  image-1: "../assets/images/espressoluv-packaging-01.jpg"
-  image-2: "../assets/images/espressoluv-packaging-02.jpg"
-  image-3: "../assets/images/espressoluv-packaging-03.jpg"
-  image-4: "../assets/images/espressoluv-packaging-04.jpg"
-  see-also: "102, 104"
+  creative_fields: "Art Direction, Graphic Design, Package Design"
+  card_image: "../assets/images/card-espressoluv-packaging.jpg"
+  image_1: "../assets/images/espressoluv-packaging-01.jpg"
+  image_2: "../assets/images/espressoluv-packaging-02.jpg"
+  image_3: "../assets/images/espressoluv-packaging-03.jpg"
+  image_4: "../assets/images/espressoluv-packaging-04.jpg"
+  see_also: "102, 104"
 ---
 
 <p className=copy_A>"<strong>EspressoLuv Package Design</strong> A roast-specific label — which includes graphic identity, cupping notes and hand-stamped roasting date — is applied to the  custom-designed vacuum-sealed bag.
