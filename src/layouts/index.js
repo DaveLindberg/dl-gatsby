@@ -7,29 +7,6 @@ import { FaLinkedin, FaGithub } from 'react-icons/lib/fa';
 
 // import './index.css';
 
-const NavLink = styled.a`
-  text-decoration: none;
-  color: ${props => (props.brand ? '#CC9900' : '#999900')};
-  padding: 0 .75rem;
-  white-space: ${props => (props.phone ? 'nowrap' : 'normal')};
-  font-weight: ${props => (props.bold ? 400 : 300)};
-  cursor: pointer;
-
-  @media (max-width: 767px) {
-    font-size: 18px;
-    display: block;
-    padding: 0rem 0;
-    line-height: 133%;
-  }
-  :hover {
-    color: #CC9900;
-  }
-}
-`;
-const NavDiv = styled.div`
-  justify-self: end;
-`;
-
 const NavBar = styled.nav`
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -37,32 +14,64 @@ const NavBar = styled.nav`
   padding: 1rem 2rem 2rem;
 `;
 
+const NavDiv = styled.div`
+  justify-self: end;
+  padding-left: 1em;
+`;
+
 const ListLink = props => (
   <li
     style={{
       display: 'inline-block',
-      marginRight: '1rem'
+      marginBottom: 0
     }}
   >
-    <Link
-      to={props.to}
-      style={{
-        textDecoration: 'none',
-        color: '#CC9900'
-      }}
-    >
-      {props.children}
-    </Link>
+    <NavLink to={props.to}>{props.children}</NavLink>
   </li>
 );
 
+const BrandLink = styled(Link)`
+  text-decoration: none;
+  color: #999900;
+  font-weight: 400;
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    display: block;
+    padding: 0rem 0;
+    line-height: 133%;
+  }
+`;
+
+const NavLink = styled(Link)`
+  text-decoration: none;
+  color: #cc9900;
+  padding: 0 0.75rem;
+  white-space: ${props => (props.phone ? 'nowrap' : 'normal')};
+  font-weight: ${props => (props.bold ? 400 : 300)};
+  cursor: pointer;
+
+  &:hover {
+    color: #999900;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    display: block;
+    padding: 0rem 0;
+    line-height: 133%;
+  }
+`;
+
 const Header = () => (
-  <NavBar>
-    <ListLink brand bold to="/" className="home">
+  <NavBar className="NavBar">
+    <BrandLink brand bold to="/" className="home">
       Dave&nbsp;Lindberg Marketing&nbsp;&&nbsp;Design
-    </ListLink>
+    </BrandLink>
     <NavDiv className="NavDiv">
-      <ListLink to="/#marketing">Marketing</ListLink>
+      <ListLink to="/#marketing" style="color: #CC9900">
+        Marketing
+      </ListLink>
       <ListLink to="/#design">Design</ListLink>
       <ListLink to="/#contact">Contact</ListLink>
       <NavLink phone bold href="tel:802-282-3368">

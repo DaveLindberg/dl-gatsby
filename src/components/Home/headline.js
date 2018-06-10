@@ -11,14 +11,14 @@ const Headline = styled.div`
     font-size: 3em;
     margin-bottom: 0px;
     @media (max-width: 767px) {
-      font-size: 2em;
+      font-size: 1.5em;
     }
   }
   h1 {
     font-size: 4em;
     color: #cc9900;
     @media (max-width: 767px) {
-      font-size: 3em;
+      font-size: 2em;
     }
   }
 `;
