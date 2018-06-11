@@ -12,6 +12,9 @@ const NavBar = styled.nav`
   grid-template-columns: 1fr 2fr;
   background: #fff;
   padding: 1rem 2rem 2rem;
+  @media (max-width: 767px) {
+    padding: 1rem 1rem;
+  }
 `;
 
 const NavDiv = styled.div`
@@ -22,7 +25,7 @@ const NavDiv = styled.div`
 const ListLink = props => (
   <li
     style={{
-      display: 'inline-block',
+      display: 'block',
       marginBottom: 0
     }}
   >
