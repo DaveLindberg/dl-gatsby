@@ -5,38 +5,44 @@ import styled from 'styled-components';
 
 const NavBar = styled.nav`
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  background: #fff;
-  padding: 1rem 1.5rem;
+  grid-template-columns: 0.5rem 1fr 1fr 0.5rem;
+  grid-gap: 10px;
+  margin-bottom: 1rem;
+  @media (max-width: 767px) {
+  }
 `;
 
-const NavDiv = styled.div`
-  justify-self: end;
-  padding-left: 1em;
+const ListLI = styled.li`
+  margin-bottom: 0;
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+  @media (max-width: 767px) {
+    display: block;
+  }
 `;
 
 const ListLink = props => (
-  <li
-    style={{
-      display: 'block',
-      marginBottom: 0
-    }}
-  >
+  <ListLI>
     <NavLink to={props.to}>{props.children}</NavLink>
-  </li>
+  </ListLI>
 );
 
 const BrandLink = styled(Link)`
   text-decoration: none;
   color: #999900;
   font-weight: 400;
-
+  grid-column: 2 / 3;
   @media (max-width: 767px) {
-    font-size: 18px;
+    font-size: 16px;
     display: block;
     padding: 0rem 0;
     line-height: 133%;
   }
+`;
+const NavDiv = styled.div`
+  justify-self: end;
+  grid-column: 3 / 4;
 `;
 
 const NavLink = styled(Link)`
@@ -52,7 +58,7 @@ const NavLink = styled(Link)`
   }
 
   @media (max-width: 767px) {
-    font-size: 18px;
+    font-size: 16px;
     display: block;
     padding: 0rem 0;
     line-height: 133%;
@@ -61,13 +67,11 @@ const NavLink = styled(Link)`
 
 const Header = () => (
   <NavBar className="NavBar">
-    <BrandLink brand bold to="/" className="home">
+    <BrandLink className="BrandLink home" brand bold to="/">
       Dave&nbsp;Lindberg Marketing&nbsp;&&nbsp;Design
     </BrandLink>
     <NavDiv className="NavDiv">
-      <ListLink to="/#marketing" style="color: #CC9900">
-        Marketing
-      </ListLink>
+      <ListLink to="/#marketing">Marketing</ListLink>
       <ListLink to="/#design">Design</ListLink>
       <ListLink to="/#contact">Contact</ListLink>
       <NavLink phone bold href="tel:802-282-3368">

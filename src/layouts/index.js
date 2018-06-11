@@ -108,8 +108,8 @@ const TemplateWrapper = ({ children }) => (
         display: 'grid',
         margin: '0 auto',
         padding: '0px 0rem 0rem',
-        gridRowStart: 1,
-        gridRowEnd: 3
+        gridTemplateColumns: '1fr',
+        gridTemplateRows: 'repeat(3,auto)'
       }}
     >
       <Helmet
@@ -126,7 +126,12 @@ const TemplateWrapper = ({ children }) => (
           }
         ]}
       />
-      <Header />
+      <Header
+        style={{
+          gridRowStart: 1,
+          gridRowEnd: 2
+        }}
+      />
       <div
         className="content-wrapper"
         style={{
@@ -134,7 +139,7 @@ const TemplateWrapper = ({ children }) => (
           /* maxWidth: 960,*/
           padding: '0px 0rem 0rem',
           gridRowStart: 2,
-          gridRowEnd: 2
+          gridRowEnd: 3
         }}
       >
         {children()}
