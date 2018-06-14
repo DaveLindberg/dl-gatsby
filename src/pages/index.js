@@ -217,7 +217,9 @@ class Main extends React.Component {
             development, website, catalog and book design.
           </p>
         </Introtext>
+        {/*}
         <Portfolio user={'DaveLindberg'} showFeatured />
+        */}
         <ContacText id="contact">
           <h2>Get in touch</h2>
           <p>

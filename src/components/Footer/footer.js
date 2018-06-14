@@ -57,7 +57,7 @@ const Footer = () => (
         gridColumn: 2
       }}
     >
-      <p>&copy; 2018 Dave Lindberg Marketing & Design </p>
+      <p>&copy; 2018 Dave Lindberg Marketing & Design, LLC </p>
       <p>
         <FaLinkedin color="#999900" />
         <a href="https://www.linkedin.com/in/davelindberg/" target="blank">
