@@ -177,8 +177,6 @@ const Footer = () => (
   </FooterContent>
 );
 
-=======
->>>>>>> fix-mobile-main-active
 const TemplateWrapper = ({ children }) => (
   <div>
     <div
