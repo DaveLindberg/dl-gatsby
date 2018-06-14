@@ -8,7 +8,6 @@ import Footer from '../components/Footer/footer.js';
 
 // import './index.css';
 
-<<<<<<< HEAD
 const NavBar = styled.nav`
   display: grid;
   grid-template-columns: 1fr 2fr;
