@@ -6,6 +6,7 @@ import Img from 'gatsby-image';
 import Headline from '../components/Home/headline.js';
 import Square from '../components/Home/square.js';
 import Introtext from '../components/Home/intro-text.js';
+import LinkButton from '../components/link-button.js';
 import Portfolio from '../../react-portfolio-behance/src/components/Portfolio/Portfolio.js';
 import Projects from '../../react-portfolio-behance/src/components/Portfolio/Projects.js';
 import ContacText from '../components/Home/contact-text.js';
@@ -141,6 +142,12 @@ const StyledMain = styled.div`
   }
 `;
 
+const TempPortfolioButton = styled(LinkButton)`
+  grid-column: 1 / -1;
+  grid-row: 9 / 10;
+  margin-bottom: 1rem;
+`;
+
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -212,10 +219,21 @@ class Main extends React.Component {
             Dave at 802.282.3368 and learn how we can help.
           </p>
           <h2>Want a Better Look?</h2>
+          {/*
+            <p style={{ textAlign: 'center' }}>
+              Feel free to browse this selection of projects covering brand
+              development, website, catalog and book design.
+            </p>
+          */}
           <p style={{ textAlign: 'center' }}>
-            Feel free to browse this selection of projects covering brand
-            development, website, catalog and book design.
+            View our portfolio of select projects, available on Behance.
           </p>
+          <TempPortfolioButton
+            className="LinkButton"
+            href="https://www.behance.net/DaveLindberg"
+          >
+            Launch Portfolio
+          </TempPortfolioButton>
         </Introtext>
         {/*}
         <Portfolio user={'DaveLindberg'} showFeatured />
