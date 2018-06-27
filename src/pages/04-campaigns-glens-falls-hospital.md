@@ -24,6 +24,6 @@ Meanwhile, ongoing print campaigns delivered information via regional publicatio
 
 Certainly, there’s a lot that goes into driving an organization through a financial turnaround. GFH went from losing $1.6 million from 2009-12 to becoming a profitable institution in 2013. One key element: working with a team that delivers memorable and actionable messaging.
 
-Develop a healthy relationship with a proven marketer. Call Dave at 802 282-3368 to discuss how to get your important messages out in front.
+Develop a healthy relationship with a proven marketer. Call Dave at 603.727.2050 to discuss how to get your important messages out in front.
 
 </div>

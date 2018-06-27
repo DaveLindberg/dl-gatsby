@@ -74,8 +74,8 @@ const Header = () => (
       <ListLink to="/#marketing">Marketing</ListLink>
       <ListLink to="/#design">Design</ListLink>
       <ListLink to="/#contact">Contact</ListLink>
-      <NavLink phone bold href="tel:802-282-3368">
-        802 282-3368
+      <NavLink phone bold href="tel:603-727-2050">
+        603.727.2050
       </NavLink>
     </NavDiv>
   </NavBar>

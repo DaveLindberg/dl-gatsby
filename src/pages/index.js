@@ -93,7 +93,7 @@ const StyledMain = styled.div`
   }
   .active {
     grid-column: 1 / -1;
-    grid-row: 1 / -1;
+    grid-row: 1 / 6;
     max-height: 100vh;
     background-size: cover;
     background-position: center center;
@@ -216,7 +216,7 @@ class Main extends React.Component {
 
           <p>
             Get more out of your website, and achieve your marketing goals. Call
-            Dave at 802.282.3368 and learn how we can help.
+            Dave at 603.727.2050 and learn how we can help.
           </p>
           <h2>Want a Better Look?</h2>
           {/*
@@ -226,7 +226,9 @@ class Main extends React.Component {
             </p>
           */}
           <p style={{ textAlign: 'center' }}>
-            View our portfolio of select projects, available on Behance.
+            From campaign strategy and UX to mobile and site development, design
+            infuses all our work. View our portfolio of select artifacts,
+            available on Behance.
           </p>
           <TempPortfolioButton
             className="LinkButton"
@@ -236,7 +238,7 @@ class Main extends React.Component {
           </TempPortfolioButton>
         </Introtext>
         {/*}
-        <Portfolio user={'DaveLindberg'} showFeatured />
+          <Portfolio user={'DaveLindberg'} showFeatured />
         */}
         <ContacText id="contact">
           <h2>Get in touch</h2>
@@ -244,9 +246,9 @@ class Main extends React.Component {
             Thanks for your interest in connecting. The best ways to contact us
             are email (<a href="mailto:dave@davelindberg.com">
               Dave@DaveLindberg.com
-            </a>) and phone (<a href="tel:802-282-3368">802 282-3368</a>).
+            </a>) and phone (<a href="tel:603-727-2050">603.727.2050</a>).
           </p>
-          <p>Our mailing address is PO Box 74, Hartland, VT 05048.</p>
+          <p>Our mailing address is PO Box 26, Lebanon, NH 03766.</p>
         </ContacText>
       </StyledMain>
     );

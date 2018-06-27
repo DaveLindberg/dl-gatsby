@@ -19,6 +19,6 @@ Since 2014, we’ve provided marketing and online consulting services, including
 
 When UVAC needed to revamp its website to better meet the needs of its constituents, we developed and led the management team through a program which enabled them to identify, categorize and prioritize their users’ needs. The results of this cross-departmental hands-on session became the blueprint for their new site architecture. Since launching in 2016, users have embraced the new site — visits are up 15% —and are consuming 24% more content.
 
-We can help your organization to better meet the needs of its core constituencies. Call Dave today at 802 282-3368 to begin the conversation.
+We can help your organization to better meet the needs of its core constituencies. Call Dave today at 603.727.2050 to begin the conversation.
 
 </div>

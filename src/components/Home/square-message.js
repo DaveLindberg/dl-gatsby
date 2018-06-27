@@ -11,10 +11,11 @@ const SquareMessage = styled.div`
   font-weight: 100;
   grid-column: 1 / -1;
   grid-row: 3 / 3;
-  padding: 0 25%;
+  padding: 0 1rem;
   text-shadow: 0px 0px 4px #000;
   @media (max-width: 767px) {
     font-size: 1em;
+    line-height: 1.2em;
   }
   .intro {
     letter-spacing: 4px;

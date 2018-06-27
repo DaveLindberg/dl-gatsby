@@ -38,6 +38,6 @@ At each stage, the consumer displays behavior that’s specific to their current
 
 Here's an example. One of the simplest ways to realize this strategy is within paid search. As people progress toward making a purchase decision, their use of search keywords becomes longer and more granular. Corresponding ads should be aware of the user’s current short-term goal, and address that need. Someone in the Problem Recognition phase will be more likely to click an add which allows them to ‘learn more,’ rather than one that urges an irrelevant action like ‘buy today’.
 
-Acting in accordance with your customers’ goals can really improve the effectiveness of your business. And like all journeys, it begins with a single step: call Dave at 802 282-3368 to get started today.
+Acting in accordance with your customers’ goals can really improve the effectiveness of your business. And like all journeys, it begins with a single step: call Dave at 603.727.2050 to get started today.
 
 </div>

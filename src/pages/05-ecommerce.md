@@ -26,6 +26,6 @@ For businesses with more specific needs, we offer highly customized ecommerce si
 
 Our proven experience in online sales includes sporting goods, soft goods, luggage, outerwear, footwear, food and beverages, collectibles, and custom furnishings. Whether you’re launching a new venture or looking to improve your current site, investing in a ten-minute call now can result in a site that’s more functional, responsive, and profitable.
 
-Contact Dave directly via email or at 802 282-3368 today. Because when it comes to ecommerce, your business can hang in the balance.
+Contact Dave directly via email or at 603.727.2050 today. Because when it comes to ecommerce, your business can hang in the balance.
 
 </div>

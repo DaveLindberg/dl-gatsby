@@ -24,6 +24,6 @@ Our work is inspired by the proven framework of the Customer Journey, a consumer
 
 We work with businesses and entrepreneurs from around the Vermont/New Hampshire region—and across the nation—helping our clients integrate their marketing efforts, improve engagement, and realize better results.
 
-Learn more about how we can help. Call Dave direct at 802.282.3368 and let’s start a conversation.
+Learn more about how we can help. Call Dave direct at 603.727.2050 and let’s start a conversation.
 
 </div>
