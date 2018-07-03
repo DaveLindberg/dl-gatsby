@@ -56,12 +56,19 @@ const StyledMain = styled.div`
       display: none;
     }
     :hover {
+      display: grid
       font-size: 1.2em;
+      grid-template-columns: 1fr 1em;
+      grid-template-rows: 1fr;
+      overflow: hidden;
+      height: 100%;
+      object-fit: cover;
+
+
       border: 1px solid white;
       align-self: stretch;
       text-align: center;
       .color-overlay {
-        overflow: hidden !important;
         background-color: rgba(0, 0, 0, 0.4);
         z-index: 5;
         transition: background 0.5s;
@@ -107,7 +114,6 @@ const StyledMain = styled.div`
       grid-column: 1 / 2;
       grid-row: 1 / -1;
       max-height: inherit;
-      overflow: scroll;
       padding: 0em;
       display: grid;
       grid-template-columns: 1fr 1em;
@@ -209,8 +215,8 @@ class Main extends React.Component {
           </p>
 
           <p>
-            We work with businesses and entrepreneurs in Vermont, New Hampshire
-            and beyond, helping our clients integrate their marketing efforts,
+            We work with businesses and entrepreneurs in the Upper Valley and
+            nationwide, helping our clients integrate their marketing efforts,
             improve brand engagement, and realize better results.
           </p>
 
