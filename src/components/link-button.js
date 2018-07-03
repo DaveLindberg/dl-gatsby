@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const LinkButton = styled.a`
   display: block;
-  color: #cc9900 !important;
+  color: #ffffff !important;
   font-size: 1.2em;
   font-weight: 100;
   background: rgba(0, 0, 0, 0.6);

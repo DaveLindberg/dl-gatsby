@@ -8,6 +8,7 @@ import Square from '../components/Home/square.js';
 import Introtext from '../components/Home/intro-text.js';
 import LinkButton from '../components/link-button.js';
 import ContacText from '../components/Home/contact-text.js';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const StyledMain = styled.div`
   grid-area: main;
@@ -229,17 +230,39 @@ class Main extends React.Component {
               development, website, catalog and book design.
             </p>
           */}
-          <p style={{ textAlign: 'center' }}>
-            From campaign strategy and UX to mobile and site development, design
-            infuses all our work. View our portfolio of select artifacts,
+          <p style={{ marginTop: '1rem' }}>
+            Effective design is the art of solving problems. Across multiple
+            disciplines &mdash; campaign strategy and UX planning, mobile and
+            site development, print and video &mdash; design infuses our work,
+            helping to ensure the solutions we deliver are appropriate and
+            effective.
+          </p>
+          <p>
+            Feel free to review our portfolio of select projects and artifacts,
             available on Behance.
           </p>
-          <TempPortfolioButton
+          <OutboundLink
             className="LinkButton"
             href="https://www.behance.net/DaveLindberg"
+            style={{
+              gridColumn: 2,
+              gridRow: 9,
+              justifySelf: 'center',
+              marginBottom: '1rem',
+              /* from component link-button: */
+              display: 'block',
+              color: '#ffffff',
+              fontSize: '1.2em',
+              fontWeight: 100,
+              background: 'rgba(0, 0, 0, 0.6)',
+              padding: '0.5em 2em',
+              border: '2px solid #cc9900',
+              borderRadius: '6px',
+              textDecoration: 'none'
+            }}
           >
             Launch Portfolio
-          </TempPortfolioButton>
+          </OutboundLink>
         </Introtext>
         <ContacText id="contact">
           <h2>Get in touch</h2>
