@@ -7,8 +7,6 @@ import Headline from '../components/Home/headline.js';
 import Square from '../components/Home/square.js';
 import Introtext from '../components/Home/intro-text.js';
 import LinkButton from '../components/link-button.js';
-import Portfolio from '../../react-portfolio-behance/src/components/Portfolio/Portfolio.js';
-import Projects from '../../react-portfolio-behance/src/components/Portfolio/Projects.js';
 import ContacText from '../components/Home/contact-text.js';
 
 const StyledMain = styled.div`
@@ -243,9 +241,6 @@ class Main extends React.Component {
             Launch Portfolio
           </TempPortfolioButton>
         </Introtext>
-        {/*}
-          <Portfolio user={'DaveLindberg'} showFeatured />
-        */}
         <ContacText id="contact">
           <h2>Get in touch</h2>
           <p>
