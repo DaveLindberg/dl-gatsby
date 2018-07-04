@@ -76,7 +76,8 @@ export default ({ data }) => {
           gridRow: `1 / 3`,
           justifySelf: `center`,
           zIndex: 10,
-          objectFit: `cover`
+          objectFit: `cover`,
+          marginBottom: '1rem'
         }}
       />
       <h1

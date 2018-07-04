@@ -1,31 +1,49 @@
 ---
   index: 01
   tilenum: "01"
-  title: "The Brand, Hand-Crafted."
+  title: "Understanding the Market, Hand-Crafting the Brand."
   tile: "brands"
   date: "2018-01-15"
   image: "../assets/images/espressoluv.jpg"
   message: "They frame the conversation, adding context and meaning."
   messagex: " A coherent brand delivers tangible value."
-  cta: "Building EspressoLuv"
-  pullquote: "\"The brand is more than just a graphic look, it needs to reflect the  personality and essence of the company and its products.\""
+  cta: "Hand-Crafting the Brand"
+  pullquote: "The brand is more than just a graphic look, it needs to reflect the  personality and essence of the company and its products."
 ---
 
 <div>
-<p>I’d consulted with Bill Burnett a couple years earlier, when he was researching market potential for a new venture in emergency supplies. When he ultimately decided against that investment, that it just didn’t feel like the right match for him, I was impressed. Here was a guy who did his homework, had a string of successful ventures to show for it, and was willing to wait for the right opportunity.</p>
+<p>US specialty coffee sales have been on the rise ever since 2001, and last year saw a whopping 25% growth in demand. In fact, we’re now more drinking specialty coffees than the traditionally brewed standard cups.<sup>1</sup></p>
 
-So when he called to tell me about his new idea, I could tell from the spark in his voice that he’d finally found his new calling. He went on to describe how he fell in love with espresso during his travels, the current strengths and weaknesses of the specialty coffee market, and the as-yet-unmet opportunity in the hand-roasted specialty niche.
+<p>And it may come as no surprise that the fastest growing segments in this hot market are Gen Y and Millennials, comprising over 44% of sales.<sup>2</sup> Providing an authentic, high-quality customer experience is essential to gaining a foothold in this fast-moving space. </p>
 
-Bill had researched available domains, and was pumped as he told me the new name, “EspressoLuv.com. You know, spelled l-u-v. What do you think?”
+Vermont entrepreneur Bill Burnett saw the potential for servicing a niche within this niche. Bill knew that in-home espresso machine sales have experienced steady growth. He also knew that most online specialty roasters offered only one or two varieties of espresso beans. The opportunity: an artisanal coffee producer that specializes in high-quality coffees roasted specifically for espresso drinkers.
 
-So, given a domain that combines an embedded high-value keyword with a slightly tongue-in-cheek 70s retro vibe, the goal became how to embody these elements in a way that’s visually unique and accessible to the target audience.
+The beans would be sourced from top producing regions worldwide, roasted to custom specifications so that they can withstand the intense heat and pressure that occurs within an espresso machine. Every order could shipped within 48 hours of roasting to ensure freshness; consistent quality is assured by hand-roasting in small batches.
 
-But the brand is more than just a graphic look, it needs to reflect the personality and essence of the company and its products. EspressoLuv sells more than just bags of beans. This is a place that offers access to the sensual qualities—fragrances, aromas, tastes—which come from the small yet meaningful rituals involved in brewing and savoring a well-made espresso.
+Building the brand to support this venture required us to solve a number of issues:
 
-Our design and branding guidelines set out to support the deeper nature of the brand, not only through its color palette and graphic library, but also by helping define a consistent voice, user experience, and commitment to customer service. This brand uses its packaging, website and collateral to reinforce its promise.
+<ul>
+<li>The personality for the brand needed to align with its services and market needs within a broad range of contexts.</li>
 
-<blockquote style="font-style: italic">Hand-made in Vermont with luv.</blockquote>
+<li>Since packaging design is such a critical component in online coffee sales, the bags needed to present the brand (and its individual coffee flavors) in a compelling fashion.</li>
 
-You can see more of the design work [here](https://www.behance.net/DaveLindberg), and [explore EspressoLuv.com](https://espressoluv.com/).
+<li>Each blend of roasted beans would require its own unique identity — an easily identifiable representation of the source and character of the final cup — to be used on the bag labels and website.</li>
 
-</div>
+<li>Given the timing requirements for launch, the package design, blend labels, and ecommerce site would need to be developed more or less concurrently.</li>
+</ul>
+
+We worked closely with Bill to develop logo designs and brand usage guidelines. Packaging was produced just in time to photograph for the website, with various blend labels composited into place once the products were fully developed and tested. We built the site with Wordpress and WooCommerce, speeding up development and keeping costs within budget.
+
+[EspressoLuv.com](https://espressoluv.com/) offers over a dozen custom blends of hand-roasted espresso blends, custom roasted single-origin roasts, and select goods that enhance the experience of enjoying a fine cup of espresso at home.
+
+Our experience solving complex problems across multiple interrelated components played a huge role in launching this brand. If you’re looking at a multifaceted marketing opportunity, find out how we can help smooth the process and deliver solutions that work for you.
+
+Call Dave at 603 727-2050. We’ll be happy to get together and discuss how to make good things happen on time and on budget.
+
+<p>And yes, the coffee’s on us.</p>
+<p>&nbsp;</p>
+
+1. [2017 U.S. Specialty Coffee Consumption Trends - Specialty Coffee Association News](http://www.scanews.coffee/2017/11/29/2017-u-s-specialty-coffee-consumption-trends/)
+
+2. [2018 Coffee Trends: Where is the Coffee Industry Going Next? ](https://revelsystems.com/blog/2018/01/20/2018-coffee-trends/)
+   </div>
